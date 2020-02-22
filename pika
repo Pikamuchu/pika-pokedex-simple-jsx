@@ -1,0 +1,32 @@
+#!/bin/bash
+COMMAND="$1"
+shift
+PARAMS="$@"
+
+if [ "$COMMAND" = "install" ]; then
+  echo "* Installing node_modules..."
+  npm install
+
+elif [ "$COMMAND" = "build" ]; then
+  echo "* Building..."
+  npm build
+
+elif [ "$COMMAND" = "test" ]; then
+  echo "* Testing..."
+  npm test
+
+elif [ "$COMMAND" = "start" ]; then
+  echo "* Starting..."
+  npm start
+
+else
+  echo ""
+  echo "Usage: pika [command]"
+  echo ""
+  echo "where [command] is one of:"
+  echo "   install -> install application dependencies."
+  echo "   build -> build application for production."
+  echo "   test -> execute application tests."
+  echo "   start -> start application in develop mode."
+  exit 1
+fi
