@@ -1,5 +1,7 @@
 import express from 'express';
 import mainPage from '../common/pages/mainPage';
+import gridPage from '../common/pages/gridPage';
+import detailPage from '../common/pages/detailPage';
 
 const SERVER_PORT = 3000;
 const PUBLIC_FOLDER = './public';
@@ -7,9 +9,17 @@ const PUBLIC_FOLDER = './public';
 const server = express()
   .disable('x-powered-by')
   .use(express.static(PUBLIC_FOLDER))
-  .get('/*', (req, res) => {
+  .get('/main', (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end(mainPage('Welcome to simple-jsx example page: ' + req.url).toString());
+  })
+  .get('/', (req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end(gridPage('Welcome to simple-jsx example page: ' + req.url).toString());
+  })
+  .get('/*', (req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end(detailPage('Welcome to simple-jsx example page: ' + req.url).toString());
   })
   .listen(SERVER_PORT, function(err) {
     if (err) {
