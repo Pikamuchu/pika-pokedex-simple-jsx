@@ -6,7 +6,7 @@
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "build:client": "webpack --progress --hide-modules --mode production",
-    "build:server": "babel src -d dist",
+    "build:server": "babel src -d dist --ignore \"src/client/**/*\"",
     "build": "npm run build:client && npm run build:server",
     "watch": "webpack --watch --mode development",
     "start": "nodemon --exec babel-node src/server/index.js",
@@ -32,14 +32,14 @@
     "simple-jsx": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
-    "@babel/node": "^7.0.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
     "@babel/plugin-syntax-jsx": "^7.4.0",
     "@babel/plugin-transform-runtime": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/runtime": "^7.4.0",
-    "babel-eslint": "^10.0.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/runtime": "^7.8.7",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-transform-simple-jsx": "^1.0.1",
     "chai": "^4.2.0",
@@ -53,9 +53,9 @@
     "nodemon": "^1.17.5",
     "nyc": "^14.1.1",
     "prettier": "^1.13.0",
-    "searchquire": "^1.5.0",
+    "searchquire": "^1.5.1",
     "sinon": "^7.1.1",
-    "webpack": "^4.39.1",
+    "webpack": "^4.42.0",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   }

@@ -1,13 +1,9 @@
 import mainLayout from '../layouts/mainLayout';
-import filtersPartial from '../partials/filtersPartial';
-import resultsPartial from '../partials/resultsPartial';
-import detailsPartial from '../partials/detailsPartial';
 
-export default () => {
-  const filtersSection = filtersPartial();
-  const resultsSection = resultsPartial();
-  const detailsSection = detailsPartial();
-  return mainLayout(
+const { filtersPartial, resultsPartial, detailsPartial } = require('../partials/pokedexPartials');
+
+export const mainPage = (results, labels) =>
+  mainLayout(
     <div class="container pokedex">
       <section class="section pokedex-header overflow-visible">
         <div class="column-6 push-1">
@@ -17,7 +13,7 @@ export default () => {
         <div class="column-6 push-7"></div>
       </section>
 
-      {filtersSection}
+      {filtersPartial()}
 
       <section class="section pokedex-filter-toggle">
         <div class="filter-toggle-span">
@@ -71,9 +67,25 @@ export default () => {
         </div>
       </section>
 
-      {resultsSection}
+      {resultsPartial()}
 
-      {detailsSection}
+      {detailsPartial()}
     </div>
   );
-};
+
+export const gridPage = (results, labels) =>
+  mainLayout(
+    <div class="container pokedex">
+      <section class="section pokedex-header overflow-visible">
+        <div class="column-6 push-1">
+          <h1 class="section-title no-margin no-padding">Pokédex</h1>
+        </div>
+
+        <div class="column-6 push-7"></div>
+      </section>
+
+      {resultsPartial(results, labels)}
+    </div>
+  );
+
+export const detailsPage = (details, labels) => mainLayout(<div class="container pokedex">{detailsPartial()}</div>);
