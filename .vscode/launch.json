@@ -22,6 +22,17 @@
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "name": "Babel Server",
+      "program": "${workspaceFolder}/src/server/index.js",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "sourceMaps": true
     }
   ]
 }
