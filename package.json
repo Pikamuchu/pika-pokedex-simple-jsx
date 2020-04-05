@@ -29,6 +29,7 @@
   "homepage": "https://github.com/pikamachu/pika-searchquire-examples#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "oakdex-pokedex": "^0.4.5",
     "simple-jsx": "^1.0.0"
   },
   "devDependencies": {

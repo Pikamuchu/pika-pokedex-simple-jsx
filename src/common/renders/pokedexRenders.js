@@ -37,7 +37,7 @@ export const resultsRender = (results, labels) => (
 export const resultTileRender = (result) => (
   <li class="animating" style="opacity: 1; top: 0px; left: 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
     <figure>
-      <a href="/pokedex/{result.slug}">
+      <a href="/pokedex/{result.id}">
         <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/{result.code}.png" />
       </a>
     </figure>
@@ -1738,7 +1738,7 @@ export const detailsRender = (details, labels) => (
     <div class="column-6 push-1">
       <div class="pokedex-profile">
         <div class="profile-images">
-          <img class="active" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur" />
+          <img class="active" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/{details.code}.png" alt="{details.name}" />
         </div>
       </div>
     </div>
@@ -1773,12 +1773,12 @@ export const detailsRender = (details, labels) => (
               <ul>
                 <li>
                   <span class="attribute-title">Altura</span>
-                  <span class="attribute-value">0,7 m</span>
+                  <span class="attribute-value">{details.height}</span>
                 </li>
 
                 <li>
                   <span class="attribute-title">Peso</span>
-                  <span class="attribute-value">6,9 kg</span>
+                  <span class="attribute-value">{details.weight}</span>
                 </li>
 
                 <li>

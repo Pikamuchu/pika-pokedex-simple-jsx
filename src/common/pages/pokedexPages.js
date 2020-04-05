@@ -1,4 +1,4 @@
-const { mainLayout }  = require('./mainLayout');
+const { mainLayout } = require('./mainLayout');
 const { filtersRender, resultsRender, detailsRender } = require('../renders/pokedexRenders');
 
 export const mainPage = (results, labels) =>
@@ -87,4 +87,5 @@ export const gridPage = (results, labels) =>
     </div>
   );
 
-export const detailsPage = (details, labels) => mainLayout(<div class="container pokedex">{detailsRender()}</div>);
+export const detailsPage = (details, labels) =>
+  mainLayout(<div class="container pokedex">{detailsRender(details, labels)}</div>);

@@ -1,11 +1,7 @@
 const labelsDefault = require('./data/labels_en.json');
 
-const AVAILABLE_LOCALES = ['en', 'es'];
+const AVAILABLE_LANGUAGES = ['en', 'es'];
 
-export const getLabels = req => {
-  getList(req.acceptsLanguages('es', 'en'));
-};
-
-export const getList = locale => {
-  return AVAILABLE_LOCALES.includes(locale) ? require(`./data/labels_${locale}.json`) : labelsDefault;
+export const getLabels = lang => {
+  return AVAILABLE_LANGUAGES.includes(lang) ? require(`./data/labels_${lang}.json`) : labelsDefault;
 };
