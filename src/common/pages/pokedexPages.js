@@ -1,6 +1,5 @@
-import mainLayout from '../layouts/mainLayout';
-
-const { filtersPartial, resultsPartial, detailsPartial } = require('../partials/pokedexPartials');
+const { mainLayout }  = require('./mainLayout');
+const { filtersRender, resultsRender, detailsRender } = require('../renders/pokedexRenders');
 
 export const mainPage = (results, labels) =>
   mainLayout(
@@ -13,7 +12,7 @@ export const mainPage = (results, labels) =>
         <div class="column-6 push-7"></div>
       </section>
 
-      {filtersPartial()}
+      {filtersRender()}
 
       <section class="section pokedex-filter-toggle">
         <div class="filter-toggle-span">
@@ -67,9 +66,9 @@ export const mainPage = (results, labels) =>
         </div>
       </section>
 
-      {resultsPartial()}
+      {resultsRender()}
 
-      {detailsPartial()}
+      {detailsRender()}
     </div>
   );
 
@@ -84,8 +83,8 @@ export const gridPage = (results, labels) =>
         <div class="column-6 push-7"></div>
       </section>
 
-      {resultsPartial(results, labels)}
+      {resultsRender(results, labels)}
     </div>
   );
 
-export const detailsPage = (details, labels) => mainLayout(<div class="container pokedex">{detailsPartial()}</div>);
+export const detailsPage = (details, labels) => mainLayout(<div class="container pokedex">{detailsRender()}</div>);

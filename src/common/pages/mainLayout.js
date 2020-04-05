@@ -1,4 +1,4 @@
-export default (body, locale) => (
+export const mainLayout = (body, locale) => (
   <html lang="{locale}">
     <head>
       <title>Vanilla jsx pokedex example</title>
