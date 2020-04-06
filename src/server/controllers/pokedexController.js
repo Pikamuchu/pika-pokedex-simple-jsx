@@ -1,11 +1,15 @@
-import { mainPage, gridPage, detailsPage } from '../../common/pages/pokedexPages';
+import { mainPage, listPage, detailsPage } from '../../common/pages/pokedexPages';
+import { notFoundPage } from '../../common/pages/errorPages';
 import { getLabels } from '../models/labelModel';
 import { getList, getDetails } from '../models/pokemonModel';
 
 export const getListPage = params => {
-  return gridPage(getList(params), getLabels(params.lang));
+  return listPage(getList(params), getLabels(params.lang));
 };
 
 export const getDetailsPage = params => {
-  return detailsPage(getDetails(params.id, params.lang), getLabels(params.lang));
+  const details = getDetails(params.id, params.lang)
+  return details
+    ? detailsPage(details, getLabels(params.lang))
+    : notFoundPage(getLabels(params.lang));
 };

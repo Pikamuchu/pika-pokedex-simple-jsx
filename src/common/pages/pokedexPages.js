@@ -1,5 +1,5 @@
 const { mainLayout } = require('./mainLayout');
-const { filtersRender, resultsRender, detailsRender } = require('../renders/pokedexRenders');
+const { headerRender, filtersRender, resultsRender, detailsRender } = require('../renders/pokedexRenders');
 
 export const mainPage = (results, labels) =>
   mainLayout(
@@ -72,20 +72,18 @@ export const mainPage = (results, labels) =>
     </div>
   );
 
-export const gridPage = (results, labels) =>
+export const listPage = (results, labels) =>
   mainLayout(
     <div class="container pokedex">
-      <section class="section pokedex-header overflow-visible">
-        <div class="column-6 push-1">
-          <h1 class="section-title no-margin no-padding">Pokédex</h1>
-        </div>
-
-        <div class="column-6 push-7"></div>
-      </section>
-
+      {headerRender('Pokedex')}
       {resultsRender(results, labels)}
     </div>
   );
 
 export const detailsPage = (details, labels) =>
-  mainLayout(<div class="container pokedex">{detailsRender(details, labels)}</div>);
+  mainLayout(
+    <div class="container pokedex">
+      {headerRender(`Pokedex - ${details.name}`)}
+      {detailsRender(details, labels)}
+    </div>
+  );

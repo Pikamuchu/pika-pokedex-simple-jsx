@@ -2,15 +2,15 @@ import { listenerCount } from 'cluster';
 
 const oakdexPokedex = require('oakdex-pokedex');
 
-export const getList = (params, lang) => {
+export const getList = (params) => {
   var list = oakdexPokedex.allPokemon()
   .filter(pokemon => !pokemon.evolution_from)
   .map(pokemon => {
     return {
-      id: pokemon.names.en,
-      code: pokemon.national_id.toString().padStart(3, "0"),
-      name: pokemon.names[lang],
-      type: pokemon.types,
+      id: formatId(pokemon.names.en),
+      code: formatCode(pokemon.national_id),
+      name: translate(pokemon.names, params.lang),
+      types: pokemon.types,
       color: pokemon.color
     };
   });
@@ -18,15 +18,26 @@ export const getList = (params, lang) => {
 };
 
 export const getDetails = (id, lang) => {
-  const pokemon = oakdexPokedex.findPokemon(id);
+  const pokemon = oakdexPokedex.findPokemon(parseId(id));
   return pokemon && {
+    id: formatId(pokemon.names.en),
+    code: formatCode(pokemon.national_id),
+    name: translate(pokemon.names, lang),
+    types: pokemon.types,
+    color: pokemon.color,
     abilities: pokemon.abilities.map(item => item.name),
     weight: pokemon.weight_eu,
-    code: pokemon.national_id.toString().padStart(3, "0"),
     height: pokemon.height_eu,
-    name: pokemon.names[lang],
-    id: pokemon.names.en,
-    type: pokemon.types,
-    color: pokemon.color
+    stats: pokemon.base_stats,
+    category: translate(pokemon.categories, lang),
+    description: translate(pokemon.pokedex_entries.X, lang)
   };
 };
+
+const parseId = id => id && (id.charAt(0).toUpperCase() + id.slice(1));
+
+const formatId = id => id && id.toLowerCase();
+
+const formatCode = code => code && code.toString().padStart(3, "0");
+
+const translate = (prop, lang) => prop && (prop[lang] || prop.en);

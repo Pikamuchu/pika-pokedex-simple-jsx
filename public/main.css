@@ -1,4 +1,38 @@
-html,body,div,span,h1,h2,h3,h4,h5,h6,p,pre,a,em,img,small,strike,strong,dl,dt,dd,ol,ul,li,form,label,article,aside,figure,footer,header,menu,nav,section,summary {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+em,
+img,
+small,
+strike,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,92 +40,111 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,p,pre,a,em,img,small,strike,strong,dl,dt,dd
   font: inherit;
   vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
 }
 
-article,aside,details,figcaption,figure,footer,header,menu,nav,section {
-  display: block
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
   line-height: 1;
   background: #fff;
-  font-family: "Flexo-Regular",arial,sans-serif;
+  font-family: "Flexo-Regular", arial, sans-serif;
   font-size: 16px;
   color: #222222;
-  height: 100%
+  height: 100%;
 }
 
-ol,ul {
-  list-style: none
+ol,
+ul {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent
+  -webkit-tap-highlight-color: transparent;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  color: #222222
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
 }
 
 h1 {
   font-size: 175%;
   text-transform: none;
-  margin: 0 0 1em 0
+  margin: 0 0 1em 0;
 }
 
 h2 {
   font-size: 137.5%;
   line-height: 125%;
   text-transform: none;
-  font-family: "Flexo-Medium",arial,sans-serif;
-  margin: 0.75em 0
+  font-family: "Flexo-Medium", arial, sans-serif;
+  margin: 0.75em 0;
 }
 
-h3,h4,h5,h6 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 125%;
   line-height: 125%;
   text-transform: none;
   margin: 0.5em 0;
-  font-family: "Flexo-Medium",arial,sans-serif
+  font-family: "Flexo-Medium", arial, sans-serif;
 }
 
 p {
   color: #303030;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 100%;
   font-weight: 500;
   line-height: 125%;
-  margin: 0.5em 0
+  margin: 0.5em 0;
 }
 
 .content-block-full {
   clear: both;
   display: block;
-  width: 100%
+  width: 100%;
 }
 
-.page-main-title,.section-title {
+.page-main-title,
+.section-title {
   color: #303030;
   cursor: default;
   font-size: 187.5%;
   line-height: 125%;
   text-transform: none;
-  font-family: "Flexo-Regular",arial,sans-serif
+  font-family: "Flexo-Regular", arial, sans-serif;
 }
 
 .section-title {
-  margin: 0.5em 0
+  margin: 0.5em 0;
 }
 
 .section-title.no-margin {
   margin-top: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .section-title.no-padding {
-  padding: 0
+  padding: 0;
 }
 
 #loadMore {
@@ -112,14 +165,14 @@ p {
   text-align: center;
   text-transform: none;
   font-size: 100%;
-  font-family: "Flexo-Demi",arial,sans-serif
+  font-family: "Flexo-Demi", arial, sans-serif;
 }
 
 #loadMore span {
   display: inline-block;
   margin: 0 auto;
   font-size: 100%;
-  font-family: "Flexo-Demi",arial,sans-serif;
+  font-family: "Flexo-Demi", arial, sans-serif;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -128,259 +181,270 @@ p {
   padding: 0.75em 1.25em 0.675em;
   vertical-align: middle;
   text-align: center;
-  text-transform: none
+  text-transform: none;
 }
 
 .inline-form-error span {
   float: left;
   font-size: 87.5%;
   line-height: 150%;
-  margin: 0.75em 1.5em
+  margin: 0.75em 1.5em;
 }
 
 .inline-form-error:after {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid #616161;
-  content: '';
+  content: "";
   height: 0;
   left: 16px;
   margin: 0;
   position: absolute;
   top: -8px;
   width: 0;
-  z-index: 2
+  z-index: 2;
 }
 
-input.alert-error,.alert-error {
-  border: 2px solid #E3350D
+input.alert-error,
+.alert-error {
+  border: 2px solid #e3350d;
 }
 
-input.alert-error h3,.alert-error h3 {
-  color: #E3350D
+input.alert-error h3,
+.alert-error h3 {
+  color: #e3350d;
 }
 
-input.alert-info,.alert-info {
+input.alert-info,
+.alert-info {
   border: 2px solid #30a7d7;
-  margin-bottom: 1.5em
+  margin-bottom: 1.5em;
 }
 
-input.alert-info h3,.alert-info h3 {
-  color: #30a7d7
+input.alert-info h3,
+.alert-info h3 {
+  color: #30a7d7;
 }
 
-input.alert-success,.alert-success {
-  border: 2px solid #4dad5b
+input.alert-success,
+.alert-success {
+  border: 2px solid #4dad5b;
 }
 
-input.alert-success h3,.alert-success h3 {
-  color: #4dad5b
+input.alert-success h3,
+.alert-success h3 {
+  color: #4dad5b;
 }
 
-input.alert-warning,.alert-warning {
-  border: 2px solid #ee6b2f
+input.alert-warning,
+.alert-warning {
+  border: 2px solid #ee6b2f;
 }
 
-input.alert-warning h3,.alert-warning h3 {
-  color: #ee6b2f
+input.alert-warning h3,
+.alert-warning h3 {
+  color: #ee6b2f;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .alert {
-      float:left;
-      margin-top: 0.5em;
-      width: 100%
+    float: left;
+    margin-top: 0.5em;
+    width: 100%;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .alert {
-      float:left;
-      margin-top: 0.5em;
-      width: 100%
+    float: left;
+    margin-top: 0.5em;
+    width: 100%;
   }
 }
 
-strong,.bold {
-  font-family: "Flexo-Bold",arial,sans-serif
+strong,
+.bold {
+  font-family: "Flexo-Bold", arial, sans-serif;
 }
 
-
 .clear {
-  *zoom:1}
+  *zoom: 1;
+}
 
-.clear:before,.clear:after {
+.clear:before,
+.clear:after {
   content: "";
-  display: table
+  display: table;
 }
 
 .clear:after {
-  clear: both
+  clear: both;
 }
 
 .hidden {
-  display: none
+  display: none;
 }
 
 .offscreen {
   left: -99999px;
-  position: absolute
+  position: absolute;
 }
 
 .text-center {
-  text-align: center
+  text-align: center;
 }
 
 .right {
-  float: right
+  float: right;
 }
 
 .left {
-  float: left
+  float: left;
 }
 
 .overflow-visible {
-  overflow: visible
+  overflow: visible;
 }
 
-.button-black,.custom-select-wrapper .custom-select-menu label.button-black:after {
+.button-black,
+.custom-select-wrapper .custom-select-menu label.button-black:after {
   background-color: #303030;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-black {
-  color: #303030
+  color: #303030;
 }
 
 .color-bg.color-black {
   background-color: #303030;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-blue {
-  color: #1b53ba
+  color: #1b53ba;
 }
 
 .color-bg.color-blue {
   background-color: #1b53ba;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-brown {
-  color: #675945
+  color: #675945;
 }
 
 .color-bg.color-brown {
   background-color: #675945;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-darkgray {
-  color: #616161
+  color: #616161;
 }
 
 .color-bg.color-darkgray {
   background-color: #616161;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-gray {
-  color: #a4a4a4
+  color: #a4a4a4;
 }
 
 .color-bg.color-gray {
   background-color: #a4a4a4;
-  color: #222222
+  color: #222222;
 }
 
 .color-text.color-green {
-  color: #4dad5b
+  color: #4dad5b;
 }
 
 .color-bg.color-green {
   background-color: #4dad5b;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-green-odd {
-  color: #3d8a48
+  color: #3d8a48;
 }
 
 .color-bg.color-green-odd {
   background-color: #3d8a48;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-lightblue {
-  color: #30a7d7
+  color: #30a7d7;
 }
 
 .color-bg.color-lightblue {
   background-color: #30a7d7;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-lightgray {
-  color: #F2F2F2
+  color: #f2f2f2;
 }
 
 .color-bg.color-lightgray {
-  background-color: #F2F2F2;
-  color: #fff
+  background-color: #f2f2f2;
+  color: #fff;
 }
 
 .color-text.color-orange {
-  color: #ee6b2f
+  color: #ee6b2f;
 }
 
 .color-bg.color-orange {
   background-color: #ee6b2f;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-pink {
-  color: #ff90c4
+  color: #ff90c4;
 }
 
 .color-bg.color-pink {
   background-color: #ff90c4;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-purple {
-  color: #855ac9
+  color: #855ac9;
 }
 
 .color-bg.color-purple {
   background-color: #855ac9;
-  color: #fff
+  color: #fff;
 }
 
 .color-text.color-red {
-  color: #E3350D
+  color: #e3350d;
 }
 
 .color-bg.color-red {
-  background-color: #E3350D;
-  color: #fff
+  background-color: #e3350d;
+  color: #fff;
 }
 
 .color-text.color-white {
-  color: #fff
+  color: #fff;
 }
 
 .color-bg.color-white {
   background-color: #fff;
-  color: #222222
+  color: #222222;
 }
 
 .color-text.color-yellow {
-  color: #e6bc2f
+  color: #e6bc2f;
 }
 
 .color-bg.color-yellow {
   background-color: #e6bc2f;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-bug {
@@ -390,7 +454,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
   background: linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
   background-color: #729f3f;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-dark {
@@ -400,7 +464,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #707070 50%, #707070 50%);
   background: linear-gradient(180deg, #707070 50%, #707070 50%);
   background-color: #707070;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-dragon {
@@ -410,7 +474,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
   background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
   background-color: #53a4cf;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-electric {
@@ -420,7 +484,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #eed535 50%, #eed535 50%);
   background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
   background-color: #eed535;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-fairy {
@@ -430,7 +494,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
   background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
   background-color: #fdb9e9;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-fighting {
@@ -440,7 +504,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #d56723 50%, #d56723 50%);
   background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
   background-color: #d56723;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-fire {
@@ -450,7 +514,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
   background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
   background-color: #fd7d24;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-flying {
@@ -460,7 +524,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
   background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
   background-color: #3dc7ef;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-ghost {
@@ -470,7 +534,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
   background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
   background-color: #7b62a3;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-grass {
@@ -480,7 +544,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
   background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
   background-color: #9bcc50;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-ground {
@@ -490,7 +554,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
   background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
   background-color: #f7de3f;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-ice {
@@ -500,7 +564,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
   background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
   background-color: #51c4e7;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-normal {
@@ -510,7 +574,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
   background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
   background-color: #a4acaf;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-poison {
@@ -520,7 +584,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
   background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
   background-color: #b97fc9;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-psychic {
@@ -530,7 +594,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
   background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
   background-color: #f366b9;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-rock {
@@ -540,7 +604,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
   background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
   background-color: #a38c21;
-  color: #fff
+  color: #fff;
 }
 
 .background-color-steel {
@@ -550,7 +614,7 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
   background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
   background-color: #9eb7b8;
-  color: #222222
+  color: #222222;
 }
 
 .background-color-water {
@@ -560,143 +624,164 @@ strong,.bold {
   background: -o-linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
   background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
   background-color: #4592c4;
-  color: #fff
+  color: #fff;
 }
 
 .column-6 {
   float: left;
   margin-right: -100%;
-  width: 41.96%
+  width: 41.96%;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .column-6 {
-      width:100%
+    width: 100%;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .column-6 {
-      float:left;
-      margin-right: -100%;
-      width: 85.49%
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
   }
 }
 
 .column-7 {
   float: left;
   margin-right: -100%;
-  width: 49.22%
+  width: 49.22%;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .column-7 {
-      width:100%
+    width: 100%;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .column-7 {
-      float:left;
-      margin-right: -100%;
-      width: 85.49%
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
   }
 }
 
 .column-12 {
   float: left;
   margin-right: -100%;
-  width: 85.49%
+  width: 85.49%;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .column-12 {
-      width:100%
+    width: 100%;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .column-12 {
-      float:left;
-      margin-right: -100%;
-      width: 85.49%
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
   }
 }
 
 .push-1 {
-  margin-left: 7.2525%
+  margin-left: 7.2525%;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .push-1 {
-      margin:0
+    margin: 0;
   }
 
   body.static .push-1 {
-      margin-left: 7.2525%
+    margin-left: 7.2525%;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .push-1 {
-      margin:0;
-      margin-left: 7.2525%
+    margin: 0;
+    margin-left: 7.2525%;
+  }
+}
+
+.push-2 {
+  margin-left: 14.5125%;
+}
+
+@media (min-width: 1px) and (max-width: 460px) {
+  .push-2 {
+    margin: 0;
+  }
+
+  body.static .push-2 {
+    margin-left: 14.5125%;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 720px) {
+  .push-2 {
+    margin: 0;
+    margin-left: 14.5125%;
   }
 }
 
 .push-7 {
-  margin-left: 50.7825%
+  margin-left: 50.7825%;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .push-7 {
-      margin:0
+    margin: 0;
   }
 
   body.static .push-7 {
-      margin-left: 50.7825%
+    margin-left: 50.7825%;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .push-7 {
-      margin:0;
-      margin-left: 7.2525%
+    margin: 0;
+    margin-left: 7.2525%;
   }
 }
 
 .push-8 {
-  margin-left: 58.0325%
+  margin-left: 58.0325%;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .push-8 {
-      margin:0
+    margin: 0;
   }
 
   body.static .push-8 {
-      margin-left: 58.0325%
+    margin-left: 58.0325%;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .push-8 {
-      margin:0;
-      margin-left: 7.2525%
+    margin: 0;
+    margin-left: 7.2525%;
   }
 }
 
 .tt-query {
-  background-color: #fff !important
+  background-color: #fff !important;
 }
 
 .tt-hint {
-  display: none !important
+  display: none !important;
 }
 
 .custom-scrollbar {
   position: relative;
-  overflow: visible
+  overflow: visible;
 }
 
 .container {
@@ -711,156 +796,168 @@ strong,.bold {
   margin: 0 auto;
   max-width: 1280px;
   overflow: hidden;
-  position: relative
+  position: relative;
 }
 
-
-.content-wrapper,.section {
+.content-wrapper,
+.section {
   background: transparent url("./images/content-bg.png") left top;
   background-size: 100% 1px;
   display: block;
   margin: 0 auto;
   overflow: hidden;
   max-width: 1024px;
-  width: 100%
+  width: 100%;
 }
 
 .section.overflow-visible {
-  *zoom:1;overflow: visible
+  *zoom: 1;
+  overflow: visible;
 }
 
-.section.overflow-visible:before,.section.overflow-visible:after {
+.section.overflow-visible:before,
+.section.overflow-visible:after {
   content: "";
-  display: table
+  display: table;
 }
 
 .section.overflow-visible:after {
-  clear: both
+  clear: both;
 }
 
-
-
-
-
-h1,h2,h3,h4,h5,h6 {
-  color: #222222
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
 }
 
 h1 {
   font-size: 175%;
   text-transform: none;
-  margin: 0 0 1em 0
+  margin: 0 0 1em 0;
 }
 
 h2 {
   font-size: 137.5%;
   line-height: 125%;
   text-transform: none;
-  font-family: "Flexo-Medium",arial,sans-serif;
-  margin: 0.75em 0
+  font-family: "Flexo-Medium", arial, sans-serif;
+  margin: 0.75em 0;
 }
 
-h3,h4,h5,h6 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 125%;
   line-height: 125%;
   text-transform: none;
   margin: 0.5em 0;
-  font-family: "Flexo-Medium",arial,sans-serif
+  font-family: "Flexo-Medium", arial, sans-serif;
 }
 
 p {
   color: #303030;
-  font-family: "Roboto",arial,sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 100%;
   font-weight: 500;
   line-height: 125%;
-  margin: 0.5em 0
+  margin: 0.5em 0;
 }
-
 
 .content-block {
   float: left;
   margin: 1em 0 0 0;
-  position: relative
+  position: relative;
 }
 
 .content-block-full {
   clear: both;
   display: block;
-  width: 100%
+  width: 100%;
 }
 
-.page-main-title,.section-title {
+.page-main-title,
+.section-title {
   color: #303030;
   cursor: default;
   font-size: 187.5%;
   line-height: 125%;
   text-transform: none;
-  font-family: "Flexo-Regular",arial,sans-serif
+  font-family: "Flexo-Regular", arial, sans-serif;
 }
 
 .section-title {
-  margin: 0.5em 0
+  margin: 0.5em 0;
 }
 
 .section-title.no-margin {
   margin-top: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .section-title.no-padding {
-  padding: 0
+  padding: 0;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
-  .content-block,.content-block.no-margin {
-      float:left;
-      margin-right: -100%;
-      width: 89.12%;
-      margin-left: 5.4425%
+  .content-block,
+  .content-block.no-margin {
+    float: left;
+    margin-right: -100%;
+    width: 89.12%;
+    margin-left: 5.4425%;
   }
 
   .content-hero {
-      margin-left: 0;
-      width: 100%
+    margin-left: 0;
+    width: 100%;
   }
 
-  .content-block-half,.content-block-half-first {
-      clear: both;
-      margin-top: 1em
+  .content-block-half,
+  .content-block-half-first {
+    clear: both;
+    margin-top: 1em;
   }
 
   .section-title.no-margin {
-      margin-top: 0.5em;
-      margin-left: 0.5em
+    margin-top: 0.5em;
+    margin-left: 0.5em;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
-  .content-block,.content-block.no-margin {
-      float:left;
-      margin-right: -100%;
-      width: 89.12%;
-      margin-left: 5.4425%
+  .content-block,
+  .content-block.no-margin {
+    float: left;
+    margin-right: -100%;
+    width: 89.12%;
+    margin-left: 5.4425%;
   }
 
   .content-hero {
-      margin-left: 0;
-      width: 100%
+    margin-left: 0;
+    width: 100%;
   }
 
-  .content-block-half,.content-block-half-first {
-      clear: both;
-      margin-top: 1em
+  .content-block-half,
+  .content-block-half-first {
+    clear: both;
+    margin-top: 1em;
   }
 
   .section-title.no-margin {
-      margin-top: 0.5em;
-      margin-left: 0.5em
+    margin-top: 0.5em;
+    margin-left: 0.5em;
   }
 }
 
-.button,body.custom-form-elements label.radio-as-toggle-button input+span,.simple-filters li {
+.button,
+body.custom-form-elements label.radio-as-toggle-button input + span,
+.simple-filters li {
   background-color: #ccc;
   border-radius: 5px;
   border: none;
@@ -875,27 +972,56 @@ p {
   vertical-align: middle;
   text-align: center;
   text-transform: none;
-  font-family: "Flexo-Demi",arial,sans-serif
+  font-family: "Flexo-Demi", arial, sans-serif;
 }
 
-.button i,body.custom-form-elements label.radio-as-toggle-button input+span i,.simple-filters li i,.button:after,body.custom-form-elements label.radio-as-toggle-button input+span:after,.simple-filters li:after,.button:before,body.custom-form-elements label.radio-as-toggle-button input+span:before,.simple-filters li:before {
+.button i,
+body.custom-form-elements label.radio-as-toggle-button input + span i,
+.simple-filters li i,
+.button:after,
+body.custom-form-elements label.radio-as-toggle-button input + span:after,
+.simple-filters li:after,
+.button:before,
+body.custom-form-elements label.radio-as-toggle-button input + span:before,
+.simple-filters li:before {
   line-height: 100%;
   position: relative;
-  top: -2px
+  top: -2px;
 }
 
-.no-arrow.button:after,body.custom-form-elements label.radio-as-toggle-button input+span:after,.pokedex-filter-header .filter-text-search .button.button-search:after,.pokedex-filter-header .filter-text-search body.custom-form-elements label.radio-as-toggle-button input+span.button-search:after,body.custom-form-elements label.radio-as-toggle-button .pokedex-filter-header .filter-text-search input+span.button-search:after,.pokedex-filter-header .filter-text-search .simple-filters li.button-search:after,.simple-filters .pokedex-filter-header .filter-text-search li.button-search:after,.simple-filters li.no-arrow:after {
-  content: none
+.no-arrow.button:after,
+body.custom-form-elements label.radio-as-toggle-button input + span:after,
+.pokedex-filter-header .filter-text-search .button.button-search:after,
+.pokedex-filter-header
+  .filter-text-search
+  body.custom-form-elements
+  label.radio-as-toggle-button
+  input
+  + span.button-search:after,
+body.custom-form-elements
+  label.radio-as-toggle-button
+  .pokedex-filter-header
+  .filter-text-search
+  input
+  + span.button-search:after,
+.pokedex-filter-header .filter-text-search .simple-filters li.button-search:after,
+.simple-filters .pokedex-filter-header .filter-text-search li.button-search:after,
+.simple-filters li.no-arrow:after {
+  content: none;
 }
 
 .custom-select-wrapper {
   float: left;
   position: relative;
-  z-index: 2
+  z-index: 2;
 }
 
-.custom-select-wrapper i.icon,.custom-select-wrapper i.arrow-right.button:after,.custom-select-wrapper i.arrow-left.button:before,.custom-select-wrapper body.custom-form-elements select+i,body.custom-form-elements .custom-select-wrapper select+i {
-  display: none
+.custom-select-wrapper i.icon,
+.custom-select-wrapper i.arrow-right.button:after,
+.custom-select-wrapper i.arrow-left.button:before,
+.custom-select-wrapper body.custom-form-elements select + i,
+body.custom-form-elements .custom-select-wrapper select + i {
+  display: none;
 }
 
 .custom-select-wrapper .custom-select-menu {
@@ -903,11 +1029,11 @@ p {
   float: left;
   position: relative;
   width: 100%;
-  z-index: 2
+  z-index: 2;
 }
 
 .custom-select-wrapper .custom-select-menu label {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   border-radius: 5px;
   cursor: pointer;
   font-size: 100%;
@@ -917,13 +1043,13 @@ p {
   padding: 0.75em 0 0.675em 0;
   text-indent: 1em;
   width: 100%;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .custom-select-wrapper .custom-select-menu label:before {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 150%;
-  margin-right: 0.5em
+  margin-right: 0.5em;
 }
 
 .custom-select-wrapper .custom-select-menu label:after {
@@ -933,14 +1059,16 @@ p {
   right: 0;
   top: 0;
   z-index: 2;
-  background-color: inherit
+  background-color: inherit;
 }
 
-.custom-select-wrapper .custom-select-menu label.button-black,.custom-select-wrapper .custom-select-menu label.button-black:after {
-  color: #fff
+.custom-select-wrapper .custom-select-menu label.button-black,
+.custom-select-wrapper .custom-select-menu label.button-black:after {
+  color: #fff;
 }
 
-.custom-select-wrapper .custom-select-menu .custom-select-scrollbar,.custom-select-wrapper .custom-select-menu>ul {
+.custom-select-wrapper .custom-select-menu .custom-select-scrollbar,
+.custom-select-wrapper .custom-select-menu > ul {
   border-radius: 0 0 5px 5px;
   clear: both;
   background-color: #616161;
@@ -950,10 +1078,23 @@ p {
   padding: 0;
   top: 2.5em;
   width: 100%;
-  z-index: 50
+  z-index: 50;
 }
 
-.icon,.arrow-right.button:after,body.custom-form-elements label.radio-as-toggle-button input+span.arrow-right:after,.simple-filters li.arrow-right:after,.arrow-left.button:before,body.custom-form-elements label.radio-as-toggle-button input+span.arrow-left:before,.simple-filters li.arrow-left:before,body.custom-form-elements select+i,.custom-select-wrapper .custom-select-menu label:before,.custom-select-wrapper .custom-select-menu label:after,.pokedex-evolution>div .evolution-profile>li:after,.pokedex-evolution.evolution-five>div .evolution-profile>li.first:before,.pokedex-evolution.evolution-five>div .evolution-profile>li.middle:before,.pokedex-evolution.evolution-six>div .evolution-profile>li.middle:before {
+.icon,
+.arrow-right.button:after,
+body.custom-form-elements label.radio-as-toggle-button input + span.arrow-right:after,
+.simple-filters li.arrow-right:after,
+.arrow-left.button:before,
+body.custom-form-elements label.radio-as-toggle-button input + span.arrow-left:before,
+.simple-filters li.arrow-left:before,
+body.custom-form-elements select + i,
+.custom-select-wrapper .custom-select-menu label:before,
+.custom-select-wrapper .custom-select-menu label:after,
+.pokedex-evolution > div .evolution-profile > li:after,
+.pokedex-evolution.evolution-five > div .evolution-profile > li.first:before,
+.pokedex-evolution.evolution-five > div .evolution-profile > li.middle:before,
+.pokedex-evolution.evolution-six > div .evolution-profile > li.middle:before {
   font-family: "icons";
   display: inline-block;
   vertical-align: middle;
@@ -965,464 +1106,514 @@ p {
   text-transform: none;
   text-rendering: auto;
   -webkit-font-smoog: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.button-black,.custom-select-wrapper .custom-select-menu label.button-black:after {
+.button-black,
+.custom-select-wrapper .custom-select-menu label.button-black:after {
   background-color: #303030;
-  color: #fff
+  color: #fff;
 }
 
-.button-black:hover,.custom-select-wrapper .custom-select-menu label.button-black:hover:after,.button-black.active,.custom-select-wrapper .custom-select-menu label.active.button-black:after {
-  background-color: #282828
+.button-black:hover,
+.custom-select-wrapper .custom-select-menu label.button-black:hover:after,
+.button-black.active,
+.custom-select-wrapper .custom-select-menu label.active.button-black:after {
+  background-color: #282828;
 }
 
 .category-tags-black {
   background-color: #303030;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-black:before {
-  border-color: transparent #303030 transparent transparent
+  border-color: transparent #303030 transparent transparent;
 }
 
 .category-tags-black:hover {
-  background-color: #282828
+  background-color: #282828;
 }
 
 .category-tags-black:hover:before {
-  border-color: transparent #282828 transparent transparent
+  border-color: transparent #282828 transparent transparent;
 }
 
-.button-blue,body.custom-form-elements label.radio-as-toggle-button input+span {
+.button-blue,
+body.custom-form-elements label.radio-as-toggle-button input + span {
   background-color: #1b53ba;
-  color: #fff
+  color: #fff;
 }
 
-.button-blue:hover,body.custom-form-elements label.radio-as-toggle-button input+span:hover,.button-blue.active,body.custom-form-elements label.radio-as-toggle-button input+span.active {
-  background-color: #1847d7
+.button-blue:hover,
+body.custom-form-elements label.radio-as-toggle-button input + span:hover,
+.button-blue.active,
+body.custom-form-elements label.radio-as-toggle-button input + span.active {
+  background-color: #1847d7;
 }
 
 .category-tags-blue {
   background-color: #1b53ba;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-blue:before {
-  border-color: transparent #1b53ba transparent transparent
+  border-color: transparent #1b53ba transparent transparent;
 }
 
 .category-tags-blue:hover {
-  background-color: #1847d7
+  background-color: #1847d7;
 }
 
 .category-tags-blue:hover:before {
-  border-color: transparent #1847d7 transparent transparent
+  border-color: transparent #1847d7 transparent transparent;
 }
 
 .button-brown {
   background-color: #675945;
-  color: #fff
+  color: #fff;
 }
 
-.button-brown:hover,.button-brown.active {
-  background-color: #483f31
+.button-brown:hover,
+.button-brown.active {
+  background-color: #483f31;
 }
 
 .category-tags-brown {
   background-color: #675945;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-brown:before {
-  border-color: transparent #675945 transparent transparent
+  border-color: transparent #675945 transparent transparent;
 }
 
 .category-tags-brown:hover {
-  background-color: #483f31
+  background-color: #483f31;
 }
 
 .category-tags-brown:hover:before {
-  border-color: transparent #483f31 transparent transparent
+  border-color: transparent #483f31 transparent transparent;
 }
 
 .button-darkgray {
   background-color: #616161;
-  color: #fff
+  color: #fff;
 }
 
-.button-darkgray:hover,.button-darkgray.active {
-  background-color: #303030
+.button-darkgray:hover,
+.button-darkgray.active {
+  background-color: #303030;
 }
 
 .category-tags-darkgray {
   background-color: #616161;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-darkgray:before {
-  border-color: transparent #616161 transparent transparent
+  border-color: transparent #616161 transparent transparent;
 }
 
 .category-tags-darkgray:hover {
-  background-color: #303030
+  background-color: #303030;
 }
 
 .category-tags-darkgray:hover:before {
-  border-color: transparent #303030 transparent transparent
+  border-color: transparent #303030 transparent transparent;
 }
 
-.button-gray,.custom-select-wrapper .custom-select-menu label.button-gray:after,.simple-filters li {
+.button-gray,
+.custom-select-wrapper .custom-select-menu label.button-gray:after,
+.simple-filters li {
   background-color: #a4a4a4;
-  color: #fff
+  color: #fff;
 }
 
-.button-gray:hover,.custom-select-wrapper .custom-select-menu label.button-gray:hover:after,.simple-filters li:hover,.button-gray.active,.custom-select-wrapper .custom-select-menu label.active.button-gray:after,.simple-filters li.active {
-  background-color: #8b8b8b
+.button-gray:hover,
+.custom-select-wrapper .custom-select-menu label.button-gray:hover:after,
+.simple-filters li:hover,
+.button-gray.active,
+.custom-select-wrapper .custom-select-menu label.active.button-gray:after,
+.simple-filters li.active {
+  background-color: #8b8b8b;
 }
 
 .category-tags-gray {
   background-color: #a4a4a4;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-gray:before {
-  border-color: transparent #a4a4a4 transparent transparent
+  border-color: transparent #a4a4a4 transparent transparent;
 }
 
 .category-tags-gray:hover {
-  background-color: #8b8b8b
+  background-color: #8b8b8b;
 }
 
 .category-tags-gray:hover:before {
-  border-color: transparent #8b8b8b transparent transparent
+  border-color: transparent #8b8b8b transparent transparent;
 }
 
-.button-green,.custom-select-wrapper .custom-select-menu label.button-green:after {
+.button-green,
+.custom-select-wrapper .custom-select-menu label.button-green:after {
   background-color: #4dad5b;
-  color: #fff
+  color: #fff;
 }
 
-.button-green:hover,.custom-select-wrapper .custom-select-menu label.button-green:hover:after,.button-green.active,.custom-select-wrapper .custom-select-menu label.active.button-green:after {
-  background-color: #369143
+.button-green:hover,
+.custom-select-wrapper .custom-select-menu label.button-green:hover:after,
+.button-green.active,
+.custom-select-wrapper .custom-select-menu label.active.button-green:after {
+  background-color: #369143;
 }
 
 .category-tags-green {
   background-color: #4dad5b;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-green:before {
-  border-color: transparent #4dad5b transparent transparent
+  border-color: transparent #4dad5b transparent transparent;
 }
 
 .category-tags-green:hover {
-  background-color: #369143
+  background-color: #369143;
 }
 
 .category-tags-green:hover:before {
-  border-color: transparent #369143 transparent transparent
+  border-color: transparent #369143 transparent transparent;
 }
 
 .button-green-odd {
   background-color: #3d8a48;
-  color: #fff
+  color: #fff;
 }
 
-.button-green-odd:hover,.button-green-odd.active {
-  background-color: #369143
+.button-green-odd:hover,
+.button-green-odd.active {
+  background-color: #369143;
 }
 
 .category-tags-green-odd {
   background-color: #3d8a48;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-green-odd:before {
-  border-color: transparent #3d8a48 transparent transparent
+  border-color: transparent #3d8a48 transparent transparent;
 }
 
 .category-tags-green-odd:hover {
-  background-color: #369143
+  background-color: #369143;
 }
 
 .category-tags-green-odd:hover:before {
-  border-color: transparent #369143 transparent transparent
+  border-color: transparent #369143 transparent transparent;
 }
 
 .button-lightblue {
   background-color: #30a7d7;
-  color: #fff
+  color: #fff;
 }
 
-.button-lightblue:hover,.button-lightblue.active {
-  background-color: #1b82b1
+.button-lightblue:hover,
+.button-lightblue.active {
+  background-color: #1b82b1;
 }
 
 .category-tags-lightblue {
   background-color: #30a7d7;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-lightblue:before {
-  border-color: transparent #30a7d7 transparent transparent
+  border-color: transparent #30a7d7 transparent transparent;
 }
 
 .category-tags-lightblue:hover {
-  background-color: #1b82b1
+  background-color: #1b82b1;
 }
 
 .category-tags-lightblue:hover:before {
-  border-color: transparent #1b82b1 transparent transparent
+  border-color: transparent #1b82b1 transparent transparent;
 }
 
 .button-lightgray {
-  background-color: #F2F2F2;
-  color: #fff
+  background-color: #f2f2f2;
+  color: #fff;
 }
 
-.button-lightgray:hover,.button-lightgray.active {
-  background-color: #d0d0d0
+.button-lightgray:hover,
+.button-lightgray.active {
+  background-color: #d0d0d0;
 }
 
 .category-tags-lightgray {
-  background-color: #F2F2F2;
-  color: #fff
+  background-color: #f2f2f2;
+  color: #fff;
 }
 
 .category-tags-lightgray:before {
-  border-color: transparent #F2F2F2 transparent transparent
+  border-color: transparent #f2f2f2 transparent transparent;
 }
 
 .category-tags-lightgray:hover {
-  background-color: #d0d0d0
+  background-color: #d0d0d0;
 }
 
 .category-tags-lightgray:hover:before {
-  border-color: transparent #d0d0d0 transparent transparent
+  border-color: transparent #d0d0d0 transparent transparent;
 }
 
-.button-orange,body.custom-form-elements label.radio-as-toggle-button input:checked+span,body.custom-form-elements label.radio-as-toggle-button input+span:hover,.custom-select-wrapper .custom-select-menu label.button-orange:after,.pokedex-filter-header .filter-text-search .button-search {
+.button-orange,
+body.custom-form-elements label.radio-as-toggle-button input:checked + span,
+body.custom-form-elements label.radio-as-toggle-button input + span:hover,
+.custom-select-wrapper .custom-select-menu label.button-orange:after,
+.pokedex-filter-header .filter-text-search .button-search {
   background-color: #ee6b2f;
-  color: #fff
+  color: #fff;
 }
 
-.button-orange:hover,body.custom-form-elements label.radio-as-toggle-button input+span:hover,.custom-select-wrapper .custom-select-menu label.button-orange:hover:after,.pokedex-filter-header .filter-text-search .button-search:hover,.button-orange.active,body.custom-form-elements label.radio-as-toggle-button input:checked+span.active,body.custom-form-elements label.radio-as-toggle-button input+span.active:hover,.custom-select-wrapper .custom-select-menu label.active.button-orange:after,.pokedex-filter-header .filter-text-search .active.button-search {
-  background-color: #da471b
+.button-orange:hover,
+body.custom-form-elements label.radio-as-toggle-button input + span:hover,
+.custom-select-wrapper .custom-select-menu label.button-orange:hover:after,
+.pokedex-filter-header .filter-text-search .button-search:hover,
+.button-orange.active,
+body.custom-form-elements label.radio-as-toggle-button input:checked + span.active,
+body.custom-form-elements label.radio-as-toggle-button input + span.active:hover,
+.custom-select-wrapper .custom-select-menu label.active.button-orange:after,
+.pokedex-filter-header .filter-text-search .active.button-search {
+  background-color: #da471b;
 }
 
 .category-tags-orange {
   background-color: #ee6b2f;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-orange:before {
-  border-color: transparent #ee6b2f transparent transparent
+  border-color: transparent #ee6b2f transparent transparent;
 }
 
 .category-tags-orange:hover {
-  background-color: #da471b
+  background-color: #da471b;
 }
 
 .category-tags-orange:hover:before {
-  border-color: transparent #da471b transparent transparent
+  border-color: transparent #da471b transparent transparent;
 }
 
 .button-pink {
   background-color: #ff90c4;
-  color: #fff
+  color: #fff;
 }
 
-.button-pink:hover,.button-pink.active {
-  background-color: #ff2a8e
+.button-pink:hover,
+.button-pink.active {
+  background-color: #ff2a8e;
 }
 
 .category-tags-pink {
   background-color: #ff90c4;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-pink:before {
-  border-color: transparent #ff90c4 transparent transparent
+  border-color: transparent #ff90c4 transparent transparent;
 }
 
 .category-tags-pink:hover {
-  background-color: #ff2a8e
+  background-color: #ff2a8e;
 }
 
 .category-tags-pink:hover:before {
-  border-color: transparent #ff2a8e transparent transparent
+  border-color: transparent #ff2a8e transparent transparent;
 }
 
 .button-purple {
   background-color: #855ac9;
-  color: #fff
+  color: #fff;
 }
 
-.button-purple:hover,.button-purple.active {
-  background-color: #734bb2
+.button-purple:hover,
+.button-purple.active {
+  background-color: #734bb2;
 }
 
 .category-tags-purple {
   background-color: #855ac9;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-purple:before {
-  border-color: transparent #855ac9 transparent transparent
+  border-color: transparent #855ac9 transparent transparent;
 }
 
 .category-tags-purple:hover {
-  background-color: #734bb2
+  background-color: #734bb2;
 }
 
 .category-tags-purple:hover:before {
-  border-color: transparent #734bb2 transparent transparent
+  border-color: transparent #734bb2 transparent transparent;
 }
 
 .button-red {
-  background-color: #E3350D;
-  color: #fff
+  background-color: #e3350d;
+  color: #fff;
 }
 
-.button-red:hover,.button-red.active {
-  background-color: #b32a0a
+.button-red:hover,
+.button-red.active {
+  background-color: #b32a0a;
 }
 
 .category-tags-red {
-  background-color: #E3350D;
-  color: #fff
+  background-color: #e3350d;
+  color: #fff;
 }
 
 .category-tags-red:before {
-  border-color: transparent #E3350D transparent transparent
+  border-color: transparent #e3350d transparent transparent;
 }
 
 .category-tags-red:hover {
-  background-color: #b32a0a
+  background-color: #b32a0a;
 }
 
 .category-tags-red:hover:before {
-  border-color: transparent #b32a0a transparent transparent
+  border-color: transparent #b32a0a transparent transparent;
 }
 
-.button-white,.pokedex-filter-header .filter-text-search #searchInput,.pokedex-filter-header .filter-text-search .twitter-typeahead {
+.button-white,
+.pokedex-filter-header .filter-text-search #searchInput,
+.pokedex-filter-header .filter-text-search .twitter-typeahead {
   background-color: #fff;
-  color: #222222
+  color: #222222;
 }
 
-.button-white:hover,.pokedex-filter-header .filter-text-search #searchInput:hover,.pokedex-filter-header .filter-text-search .twitter-typeahead:hover,.button-white.active,.pokedex-filter-header .filter-text-search .active#searchInput,.pokedex-filter-header .filter-text-search .active.twitter-typeahead {
-  background-color: #fff
+.button-white:hover,
+.pokedex-filter-header .filter-text-search #searchInput:hover,
+.pokedex-filter-header .filter-text-search .twitter-typeahead:hover,
+.button-white.active,
+.pokedex-filter-header .filter-text-search .active#searchInput,
+.pokedex-filter-header .filter-text-search .active.twitter-typeahead {
+  background-color: #fff;
 }
 
 .category-tags-white {
   background-color: #fff;
-  color: #222222
+  color: #222222;
 }
 
 .category-tags-white:before {
-  border-color: transparent #fff transparent transparent
+  border-color: transparent #fff transparent transparent;
 }
 
 .category-tags-white:hover {
-  background-color: #fff
+  background-color: #fff;
 }
 
 .category-tags-white:hover:before {
-  border-color: transparent #fff transparent transparent
+  border-color: transparent #fff transparent transparent;
 }
 
 .button-yellow {
   background-color: #e6bc2f;
-  color: #fff
+  color: #fff;
 }
 
-.button-yellow:hover,.button-yellow.active {
-  background-color: #daa31c
+.button-yellow:hover,
+.button-yellow.active {
+  background-color: #daa31c;
 }
 
 .category-tags-yellow {
   background-color: #e6bc2f;
-  color: #fff
+  color: #fff;
 }
 
 .category-tags-yellow:before {
-  border-color: transparent #e6bc2f transparent transparent
+  border-color: transparent #e6bc2f transparent transparent;
 }
 
 .category-tags-yellow:hover {
-  background-color: #daa31c
+  background-color: #daa31c;
 }
 
 .category-tags-yellow:hover:before {
-  border-color: transparent #daa31c transparent transparent
+  border-color: transparent #daa31c transparent transparent;
 }
 
 .pokedex-filter-header {
-  *zoom:1;background: #303030;
+  *zoom: 1;
+  background: #303030;
   float: left;
-  width: 100%
+  width: 100%;
 }
 
-.pokedex-filter-header:before,.pokedex-filter-header:after {
+.pokedex-filter-header:before,
+.pokedex-filter-header:after {
   content: "";
-  display: table
+  display: table;
 }
 
 .pokedex-filter-header:after {
-  clear: both
+  clear: both;
 }
 
-.pokedex-filter-header>div {
+.pokedex-filter-header > div {
   background: none;
   display: block;
   margin: 0 auto;
   overflow: visible;
   max-width: 1024px;
-  width: 100%
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 768px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .pokedex-filter-header>div {
-      max-width:736px
+  .pokedex-filter-header > div {
+    max-width: 736px;
   }
 }
 
-body.static .pokedex-filter-header>div {
-  width: 1024px
+body.static .pokedex-filter-header > div {
+  width: 1024px;
 }
 
-.pokedex-filter-header>div .subtitle {
+.pokedex-filter-header > div .subtitle {
   color: #fff;
   clear: both;
   float: left;
   display: block;
   margin-top: 0;
-  margin-bottom: 1.5em
+  margin-bottom: 1.5em;
 }
 
 .pokedex-filter-header .filter-text-search {
-  *zoom:1;margin-top: 2em;
-  position: relative
+  *zoom: 1;
+  margin-top: 2em;
+  position: relative;
 }
 
-.pokedex-filter-header .filter-text-search:before,.pokedex-filter-header .filter-text-search:after {
+.pokedex-filter-header .filter-text-search:before,
+.pokedex-filter-header .filter-text-search:after {
   content: "";
-  display: table
+  display: table;
 }
 
 .pokedex-filter-header .filter-text-search:after {
-  clear: both
+  clear: both;
 }
 
 .pokedex-filter-header .filter-text-search label {
-  font-family: "Flexo-Regular",arial,sans-serif;
+  font-family: "Flexo-Regular", arial, sans-serif;
   float: left;
   font-size: 167.5%;
   text-transform: none;
-  width: 100%
+  width: 100%;
 }
-
 
 .pokedex-filter-header .filter-text-search #searchInput {
   float: left;
@@ -1433,7 +1624,7 @@ body.static .pokedex-filter-header>div {
   color: #303030;
   margin-top: 0.325em;
   background-color: #fff;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .pokedex-filter-header .filter-text-search .twitter-typeahead {
@@ -1444,7 +1635,7 @@ body.static .pokedex-filter-header>div {
   clear: both;
   margin-top: 0.325em;
   background-color: #fff;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .pokedex-filter-header .filter-text-search .twitter-typeahead #searchInput {
@@ -1452,7 +1643,7 @@ body.static .pokedex-filter-header>div {
   border: none;
   color: #303030;
   margin: 0;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-filter-header .filter-text-search .button-search {
@@ -1468,11 +1659,11 @@ body.static .pokedex-filter-header>div {
   text-indent: -9999px;
   height: 48px;
   position: relative;
-  top: 2px
+  top: 2px;
 }
 
 .pokedex-filter-header .content-block {
-  margin: 2em 0 0.5em 0
+  margin: 2em 0 0.5em 0;
 }
 
 .pokedex-filter-header .content-block .banner a {
@@ -1480,29 +1671,29 @@ body.static .pokedex-filter-header>div {
   font-size: inherit;
   font-family: inherit;
   margin: 0;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .pokedex-filter-header .content-block .banner h2 {
-  font-size: 125%
+  font-size: 125%;
 }
 
 .filter-action {
   float: right;
   clear: both;
   margin-top: 2.75em;
-  width: 100%
+  width: 100%;
 }
 
 .filter-action a {
   clear: none;
   float: right;
-  font-size: 125%
+  font-size: 125%;
 }
 
 .pokedex-filter-toggle {
   overflow: visible;
-  padding: 0
+  padding: 0;
 }
 
 .filter-toggle-span {
@@ -1513,11 +1704,11 @@ body.static .pokedex-filter-header>div {
   background-color: #616161;
   height: 16px;
   cursor: pointer;
-  position: relative
+  position: relative;
 }
 
 .filter-toggle-span span {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   background-color: #616161;
   display: block;
   float: left;
@@ -1529,29 +1720,29 @@ body.static .pokedex-filter-header>div {
   top: -1em;
   text-transform: none;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
-
 
 .filter-toggle-span span i {
   background-color: #fff;
   border-radius: 10px;
   margin-left: 0.5em;
   height: 20px;
-  width: 20px
+  width: 20px;
 }
 
 .filter-toggle-span span i:before {
   color: #222222;
   font-size: 85%;
-  line-height: 135%
+  line-height: 135%;
 }
 
 .fluid .filter-toggle-span span i.hidden-mobile {
-  display: inline-block !important
+  display: inline-block !important;
 }
 
-.filter-toggle-span:before,.filter-toggle-span:after {
+.filter-toggle-span:before,
+.filter-toggle-span:after {
   background: transparent url("./images/notches/large-notch-darkgray.png") no-repeat;
   background-size: 38px 18px;
   content: " ";
@@ -1566,7 +1757,7 @@ body.static .pokedex-filter-header>div {
   -o-transform: scaleY(-1);
   transform: scaleY(-1);
   filter: FlipV;
-  -ms-filter: "FlipV"
+  -ms-filter: "FlipV";
 }
 
 .filter-toggle-span:after {
@@ -1576,143 +1767,143 @@ body.static .pokedex-filter-header>div {
   -ms-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .filter-action {
-      float:none
+    float: none;
   }
 
   .filter-action a {
-      float: right;
-      width: 45%;
-      font-size: 110%;
-      box-sizing: border-box;
-      padding-left: .8em;
-      padding-right: .8em
+    float: right;
+    width: 45%;
+    font-size: 110%;
+    box-sizing: border-box;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
   }
 
   .filter-action a:last-child {
-      float: left
+    float: left;
   }
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
-  .pokedex-filter-header>div p.subtitle {
-      float:left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      margin-top: 0.5em;
-      margin-bottom: 1.5em
+  .pokedex-filter-header > div p.subtitle {
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
   }
 
   .pokedex-filter-header .filter-text-search {
-      float: left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
   }
 
   .pokedex-filter-header .filter-text-search .twitter-typeahead {
-      float: left;
-      margin-right: -100%;
-      width: 70.98%
+    float: left;
+    margin-right: -100%;
+    width: 70.98%;
   }
 
   .pokedex-filter-header .filter-text-search i {
-      bottom: -4px
+    bottom: -4px;
   }
 
   .filter-toggle-span {
-      float: left;
-      margin-right: -100%;
-      width: 70.98%;
-      margin-left: 14.5125%
+    float: left;
+    margin-right: -100%;
+    width: 70.98%;
+    margin-left: 14.5125%;
   }
 
   .fluid .filter-toggle-span span i.hidden-mobile {
-      display: none !important
+    display: none !important;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
-  .pokedex-filter-header>div p.subtitle {
-      float:left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      margin-top: 0.5em;
-      margin-bottom: 1.5em
+  .pokedex-filter-header > div p.subtitle {
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
   }
 
   .pokedex-filter-header .filter-text-search {
-      float: left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
   }
 
   .pokedex-filter-header .filter-text-search .twitter-typeahead {
-      float: left;
-      margin-right: -100%;
-      width: 70.98%
+    float: left;
+    margin-right: -100%;
+    width: 70.98%;
   }
 
   .pokedex-filter-header .filter-text-search i {
-      bottom: -4px
+    bottom: -4px;
   }
 
   .filter-toggle-span {
-      float: left;
-      margin-right: -100%;
-      width: 70.98%;
-      margin-left: 14.5125%
+    float: left;
+    margin-right: -100%;
+    width: 70.98%;
+    margin-left: 14.5125%;
   }
 
   .fluid .filter-toggle-span span i.hidden-mobile {
-      display: none !important
+    display: none !important;
   }
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .filter-action {
-      float:none
+    float: none;
   }
 
   .filter-action a {
-      float: none;
-      width: auto;
-      font-size: 110%;
-      box-sizing: border-box;
-      display: block
+    float: none;
+    width: auto;
+    font-size: 110%;
+    box-sizing: border-box;
+    display: block;
   }
 
   .filter-action a:last-child {
-      margin-top: 3.125%
+    margin-top: 3.125%;
   }
 }
 
 .pokedex-header .custom-select-wrapper {
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-header .styled-select {
   border-radius: 5px;
-  width: 98.4375%
+  width: 98.4375%;
 }
 
 .pokedex-header .styled-select:before {
-  display: none
+  display: none;
 }
 
 .pokedex-header .styled-select i {
-  display: none
+  display: none;
 }
 
 html.touch .pokedex-header .styled-select {
-  width: 98.4375%
+  width: 98.4375%;
 }
 
 html.touch .pokedex-header .styled-select:before {
@@ -1720,15 +1911,15 @@ html.touch .pokedex-header .styled-select:before {
   font-size: 125%;
   position: absolute;
   top: 0.675em;
-  left: 0.75em
+  left: 0.75em;
 }
 
 html.touch .pokedex-header .styled-select i {
-  display: block
+  display: block;
 }
 
 html.touch .pokedex-header .styled-select select {
-  text-indent: 2.25em
+  text-indent: 2.25em;
 }
 
 .pokedex-filter {
@@ -1738,45 +1929,45 @@ html.touch .pokedex-header .styled-select select {
   border-style: solid;
   border-width: 1px 0 0 0;
   overflow: hidden;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-filter .custom-select-wrapper {
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-filter .styled-select {
   border-radius: 5px;
-  width: 98.4375%
+  width: 98.4375%;
 }
 
 .pokedex-filter .styled-select:before {
-  display: none
+  display: none;
 }
 
 .pokedex-filter .styled-select i {
-  display: none
+  display: none;
 }
 
 .pokedex-filter .styled-select select {
-  text-indent: 2.25em
+  text-indent: 2.25em;
 }
 
 html.touch .pokedex-filter .styled-select {
-  width: 98.4375%
+  width: 98.4375%;
 }
 
 html.touch .pokedex-filter .styled-select i {
-  display: block
+  display: block;
 }
 
 html.touch .pokedex-filter .styled-select select {
-  text-indent: 2.25em
+  text-indent: 2.25em;
 }
 
 .pokedex-filter-title {
   margin-left: 1.5625%;
-  padding-left: 0
+  padding-left: 0;
 }
 
 .pokedex-filter-wrapper {
@@ -1785,65 +1976,95 @@ html.touch .pokedex-filter .styled-select select {
   margin: 1em auto;
   max-width: 1024px;
   overflow: hidden;
-  height: 0px
+  height: 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 768px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .pokedex-filter-wrapper {
-      max-width:736px
+    max-width: 736px;
   }
 }
 
 body.static .pokedex-filter-wrapper {
-  width: 1024px
+  width: 1024px;
 }
 
-.pokedex-filter-wrapper h2,.pokedex-filter-wrapper h3 {
+.pokedex-filter-wrapper h2,
+.pokedex-filter-wrapper h3 {
   color: #fff;
-  font-size: 167.5%
+  font-size: 167.5%;
 }
 
 .pokedex-filter-wrapper h2 {
   float: left;
   margin-right: -100%;
-  width: 49.22%
+  width: 49.22%;
 }
 
 .pokedex-filter-wrapper .custom-select-wrapper {
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-filter-wrapper .custom-select-wrapper ul {
-  background-color: #a4a4a4
+  background-color: #a4a4a4;
 }
 
 .pokedex-filter-wrapper .custom-select-wrapper ul li {
-  color: #222222
+  color: #222222;
 }
 
 .pokedex-filter-wrapper .custom-select-wrapper ul li:hover {
-  color: #4dad5b
+  color: #4dad5b;
 }
 
 .pokedex-filter-wrapper .custom-select-wrapper .custom-select-menu .custom-select-scrollbar {
-  background-color: #a4a4a4
+  background-color: #a4a4a4;
 }
 
-html.no-touch .pokedex-filter-wrapper .custom-select-wrapper .custom-select-menu .custom-select-scrollbar .viewport::-webkit-scrollbar-thumb {
-  background-color: #303030
+html.no-touch
+  .pokedex-filter-wrapper
+  .custom-select-wrapper
+  .custom-select-menu
+  .custom-select-scrollbar
+  .viewport::-webkit-scrollbar-thumb {
+  background-color: #303030;
 }
 
-html.no-touch .pokedex-filter-wrapper .custom-select-wrapper .custom-select-menu .custom-select-scrollbar .viewport::-webkit-scrollbar-button {
-  background-image: url("./images/scrollbar-bg-dark.png")
+html.no-touch
+  .pokedex-filter-wrapper
+  .custom-select-wrapper
+  .custom-select-menu
+  .custom-select-scrollbar
+  .viewport::-webkit-scrollbar-button {
+  background-image: url("./images/scrollbar-bg-dark.png");
 }
 
-html.no-touch .pokedex-filter-wrapper .custom-select-wrapper .custom-select-menu .custom-select-scrollbar .viewport .scroll-control--decr,html.no-touch .pokedex-filter-wrapper .custom-select-wrapper .custom-select-menu .custom-select-scrollbar .viewport .scroll-control--incr {
-  background-image: url("./images/scrollbar-bg-dark.png")
+html.no-touch
+  .pokedex-filter-wrapper
+  .custom-select-wrapper
+  .custom-select-menu
+  .custom-select-scrollbar
+  .viewport
+  .scroll-control--decr,
+html.no-touch
+  .pokedex-filter-wrapper
+  .custom-select-wrapper
+  .custom-select-menu
+  .custom-select-scrollbar
+  .viewport
+  .scroll-control--incr {
+  background-image: url("./images/scrollbar-bg-dark.png");
 }
 
-html.no-touch .pokedex-filter-wrapper .custom-select-wrapper .custom-select-menu .custom-select-scrollbar .viewport .scroll-control--incr {
+html.no-touch
+  .pokedex-filter-wrapper
+  .custom-select-wrapper
+  .custom-select-menu
+  .custom-select-scrollbar
+  .viewport
+  .scroll-control--incr {
   bottom: 10px;
-  background-position: 0 -14px
+  background-position: 0 -14px;
 }
 
 .simple-filters-wrapper {
@@ -1852,11 +2073,11 @@ html.no-touch .pokedex-filter-wrapper .custom-select-wrapper .custom-select-menu
   margin: 1em auto;
   overflow: hidden;
   max-width: 1024px;
-  width: 100%
+  width: 100%;
 }
 
 body.static .simple-filters-wrapper {
-  width: 1024px
+  width: 1024px;
 }
 
 .simple-filters {
@@ -1865,69 +2086,91 @@ body.static .simple-filters-wrapper {
   width: 85.49%;
   margin-left: 7.2525%;
   margin-top: 0.75em;
-  margin-bottom: 0.75em
+  margin-bottom: 0.75em;
 }
 
 .simple-filters li {
-  margin-left: .78125%;
+  margin-left: 0.78125%;
   margin-right: 0;
   display: none;
   padding: 0.75em 0.675em;
-  clear: none !important
+  clear: none !important;
 }
 
 .simple-filters li.active-simple-filter {
-  display: block
+  display: block;
 }
 
 .simple-filters li:after {
-  content: none
+  content: none;
 }
 
 .simple-filters li span {
-  font-size: 85%
+  font-size: 85%;
 }
 
 .simple-filters li .filter {
   color: #222222;
-  text-transform: none
+  text-transform: none;
 }
 
 .simple-filters li .value {
-  color: #fff
+  color: #fff;
 }
 
-.simple-filters li .icon,.simple-filters li .arrow-right.button:after,.simple-filters li body.custom-form-elements label.radio-as-toggle-button input+span.arrow-right:after,body.custom-form-elements label.radio-as-toggle-button .simple-filters li input+span.arrow-right:after,.simple-filters li li.arrow-right:after,.simple-filters li .arrow-left.button:before,.simple-filters li body.custom-form-elements label.radio-as-toggle-button input+span.arrow-left:before,body.custom-form-elements label.radio-as-toggle-button .simple-filters li input+span.arrow-left:before,.simple-filters li li.arrow-left:before,.simple-filters li body.custom-form-elements select+i,body.custom-form-elements .simple-filters li select+i,.simple-filters li .custom-select-wrapper .custom-select-menu label:before,.custom-select-wrapper .custom-select-menu .simple-filters li label:before,.simple-filters li .custom-select-wrapper .custom-select-menu label:after,.custom-select-wrapper .custom-select-menu .simple-filters li label:after,.simple-filters li .pokedex-evolution>div .evolution-profile>li:after,.pokedex-evolution>div .simple-filters li .evolution-profile>li:after,.simple-filters li .pokedex-evolution.evolution-five>div .evolution-profile>li.first:before,.pokedex-evolution.evolution-five>div .simple-filters li .evolution-profile>li.first:before,.simple-filters li .pokedex-evolution.evolution-five>div .evolution-profile>li.middle:before,.pokedex-evolution.evolution-five>div .simple-filters li .evolution-profile>li.middle:before,.simple-filters li .pokedex-evolution.evolution-six>div .evolution-profile>li.middle:before,.pokedex-evolution.evolution-six>div .simple-filters li .evolution-profile>li.middle:before {
+.simple-filters li .icon,
+.simple-filters li .arrow-right.button:after,
+.simple-filters li body.custom-form-elements label.radio-as-toggle-button input + span.arrow-right:after,
+body.custom-form-elements label.radio-as-toggle-button .simple-filters li input + span.arrow-right:after,
+.simple-filters li li.arrow-right:after,
+.simple-filters li .arrow-left.button:before,
+.simple-filters li body.custom-form-elements label.radio-as-toggle-button input + span.arrow-left:before,
+body.custom-form-elements label.radio-as-toggle-button .simple-filters li input + span.arrow-left:before,
+.simple-filters li li.arrow-left:before,
+.simple-filters li body.custom-form-elements select + i,
+body.custom-form-elements .simple-filters li select + i,
+.simple-filters li .custom-select-wrapper .custom-select-menu label:before,
+.custom-select-wrapper .custom-select-menu .simple-filters li label:before,
+.simple-filters li .custom-select-wrapper .custom-select-menu label:after,
+.custom-select-wrapper .custom-select-menu .simple-filters li label:after,
+.simple-filters li .pokedex-evolution > div .evolution-profile > li:after,
+.pokedex-evolution > div .simple-filters li .evolution-profile > li:after,
+.simple-filters li .pokedex-evolution.evolution-five > div .evolution-profile > li.first:before,
+.pokedex-evolution.evolution-five > div .simple-filters li .evolution-profile > li.first:before,
+.simple-filters li .pokedex-evolution.evolution-five > div .evolution-profile > li.middle:before,
+.pokedex-evolution.evolution-five > div .simple-filters li .evolution-profile > li.middle:before,
+.simple-filters li .pokedex-evolution.evolution-six > div .evolution-profile > li.middle:before,
+.pokedex-evolution.evolution-six > div .simple-filters li .evolution-profile > li.middle:before {
   background-color: #303030;
   border-radius: 2px;
   height: 22px;
   margin-left: 0.5em;
   line-height: 22px;
-  width: 22px
+  width: 22px;
 }
 
 .filter-help {
   float: left;
   margin-right: -100%;
   width: 49.22%;
-  margin-left: 50.7825%
+  margin-left: 50.7825%;
 }
 
 .filter-help span {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   color: #fff;
   font-size: 90%;
   float: left;
   margin-top: 1.75em;
   margin-right: 3.125%;
-  text-transform: none
+  text-transform: none;
 }
 
 .range-filter-wrapper {
   clear: both;
   display: block;
   margin: 0 0 1.5em;
-  width: 93.75%
+  width: 93.75%;
 }
 
 .rangeTitle {
@@ -1937,7 +2180,7 @@ body.static .simple-filters-wrapper {
   margin-top: 0.5em;
   margin-bottom: 1em;
   text-transform: none;
-  width: 100%
+  width: 100%;
 }
 
 .rangeValues {
@@ -1945,58 +2188,58 @@ body.static .simple-filters-wrapper {
   margin-right: -100%;
   width: 34.71%;
   margin-left: 65.2925%;
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   color: #fff;
   font-size: 175%;
   margin-top: 0.325em;
   margin-bottom: 1em;
-  text-align: right
+  text-align: right;
 }
 
 #range-boxes {
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 920px) {
   #range-boxes {
-      margin-top:10px;
-      float: right
+    margin-top: 10px;
+    float: right;
   }
 }
 
 @media screen and (max-width: 919px) {
   #range-boxes {
-      margin-top:50px;
-      float: left
+    margin-top: 50px;
+    float: left;
   }
 }
 
 #range-boxes .range-box {
   color: black;
   width: 75px;
-  display: inline
+  display: inline;
 }
 
 .pokedex-filter-tw-list {
   float: left;
   height: 370px;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-filter-tw-list li {
   float: left;
   height: 28px;
   margin-bottom: 12px;
-  width: 50%
+  width: 50%;
 }
 
 .pokedex-filter-tw-list li span {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   cursor: pointer;
   float: left;
   height: 28px;
   margin: 0 0.75em 0 0;
-  text-align: center
+  text-align: center;
 }
 
 .pokedex-filter-tw-list li .pill {
@@ -2004,233 +2247,246 @@ body.static .simple-filters-wrapper {
   border-radius: 5px;
   line-height: 28px;
   max-width: 110px;
-  width: 50%
+  width: 50%;
 }
 
-.pokedex-filter-tw-list li .type-filter,.pokedex-filter-tw-list li .weakness-filter {
-  font-family: "Flexo-Bold",arial,sans-serif;
-  background: #F2F2F2;
+.pokedex-filter-tw-list li .type-filter,
+.pokedex-filter-tw-list li .weakness-filter {
+  font-family: "Flexo-Bold", arial, sans-serif;
+  background: #f2f2f2;
   border-radius: 14px;
   color: #303030;
   line-height: 30px;
-  width: 28px
+  width: 28px;
 }
 
-.pokedex-filter-tw-list li .type-filter.active-filter,.pokedex-filter-tw-list li .weakness-filter.active-filter {
-  background: #30a7d7
+.pokedex-filter-tw-list li .type-filter.active-filter,
+.pokedex-filter-tw-list li .weakness-filter.active-filter {
+  background: #30a7d7;
 }
 
 .pokedex-filter-tw-list li .weakness-filter {
-  margin-right: 0
+  margin-right: 0;
 }
 
-.pokedex-filter-height-list,.pokedex-filter-weight-list {
+.pokedex-filter-height-list,
+.pokedex-filter-weight-list {
   float: left;
   height: 80px;
   margin-bottom: 0.5em;
-  width: 100%
+  width: 100%;
 }
 
-.pokedex-filter-height-list li,.pokedex-filter-weight-list li {
+.pokedex-filter-height-list li,
+.pokedex-filter-weight-list li {
   float: left;
   margin-right: -100%;
   width: 27.46%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 12px;
   color: #303030;
   cursor: pointer;
   height: 100%;
   margin: 0 1.5625%;
-  position: relative
+  position: relative;
 }
 
-.pokedex-filter-height-list li.middle,.pokedex-filter-weight-list li.middle {
+.pokedex-filter-height-list li.middle,
+.pokedex-filter-weight-list li.middle {
   margin-left: 5.69%;
-  margin-right: 5.69%
+  margin-right: 5.69%;
 }
 
-.pokedex-filter-height-list li.highlight,.pokedex-filter-weight-list li.highlight {
-  background-color: #ee6b2f
+.pokedex-filter-height-list li.highlight,
+.pokedex-filter-weight-list li.highlight {
+  background-color: #ee6b2f;
 }
 
-.pokedex-filter-height-list li.highlight span,.pokedex-filter-weight-list li.highlight span {
-  color: #F2F2F2
+.pokedex-filter-height-list li.highlight span,
+.pokedex-filter-weight-list li.highlight span {
+  color: #f2f2f2;
 }
 
-.pokedex-filter-height-list span,.pokedex-filter-weight-list span {
+.pokedex-filter-height-list span,
+.pokedex-filter-weight-list span {
   color: #303030;
   font-size: 300%;
   line-height: 80px;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
-.pokedex-filter-height-list span.icon_filter_height_large,.pokedex-filter-weight-list span.icon_filter_height_large {
-  font-size: 500%
+.pokedex-filter-height-list span.icon_filter_height_large,
+.pokedex-filter-weight-list span.icon_filter_height_large {
+  font-size: 500%;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .pokedex-header .custom-select-wrapper {
-      float:left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      margin-top: 1em
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    margin-top: 1em;
   }
 
   html.touch .pokedex-header .styled-select {
-      float: left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      margin-top: 1em
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    margin-top: 1em;
   }
 
   html.touch .pokedex-header .styled-select:before {
-      font-size: 125%;
-      position: absolute;
-      top: 0.5em;
-      left: 0.75em
+    font-size: 125%;
+    position: absolute;
+    top: 0.5em;
+    left: 0.75em;
   }
 
   .pokedex-filter {
-      padding-bottom: 1.5em
+    padding-bottom: 1.5em;
   }
 
   .pokedex-filter-wrapper {
-      width: 100%
+    width: 100%;
   }
 
-  .pokedex-filter-wrapper h2,.pokedex-filter-wrapper .filter-help {
-      clear: both;
-      width: 100%
+  .pokedex-filter-wrapper h2,
+  .pokedex-filter-wrapper .filter-help {
+    clear: both;
+    width: 100%;
   }
 
   .pokedex-filter-wrapper .filter-help {
-      margin-left: 0
+    margin-left: 0;
   }
 
   .pokedex-filter-wrapper .filter-help span {
-      float: left;
-      margin-top: 0;
-      width: auto
+    float: left;
+    margin-top: 0;
+    width: auto;
   }
 
   .pokedex-filter-tw-list {
-      width: 100%
+    width: 100%;
   }
 
   .pokedex-filter-tw-list li .pill {
-      margin-right: 1.5625%
+    margin-right: 1.5625%;
   }
 
   .pokedex-filter-tw-list li:nth-child(even) .pill {
-      margin-left: 1.5625%
+    margin-left: 1.5625%;
   }
 
-  .pokedex-filter-tw-list li .type-filter,.pokedex-filter-tw-list li .weakness-filter {
-      margin: 0 .78125%
+  .pokedex-filter-tw-list li .type-filter,
+  .pokedex-filter-tw-list li .weakness-filter {
+    margin: 0 0.78125%;
   }
 
   .range-filter-wrapper {
-      margin-bottom: 2em
+    margin-bottom: 2em;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .pokedex-header .custom-select-wrapper {
-      float:left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      margin-top: 1em
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    margin-top: 1em;
   }
 
   html.touch .pokedex-header .styled-select {
-      float: left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      margin-top: 1em
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    margin-top: 1em;
   }
 
   html.touch .pokedex-header .styled-select:before {
-      font-size: 125%;
-      position: absolute;
-      top: 0.5em;
-      left: 0.75em
+    font-size: 125%;
+    position: absolute;
+    top: 0.5em;
+    left: 0.75em;
   }
 
   .pokedex-filter {
-      padding-bottom: 1.5em
+    padding-bottom: 1.5em;
   }
 
   .pokedex-filter-wrapper {
-      width: 100%
+    width: 100%;
   }
 
-  .pokedex-filter-wrapper h2,.pokedex-filter-wrapper .filter-help {
-      clear: both;
-      width: 100%
+  .pokedex-filter-wrapper h2,
+  .pokedex-filter-wrapper .filter-help {
+    clear: both;
+    width: 100%;
   }
 
   .pokedex-filter-wrapper .filter-help {
-      margin-left: 0
+    margin-left: 0;
   }
 
   .pokedex-filter-wrapper .filter-help span {
-      float: left;
-      margin-top: 0;
-      width: auto
+    float: left;
+    margin-top: 0;
+    width: auto;
   }
 
   .pokedex-filter-tw-list {
-      width: 100%
+    width: 100%;
   }
 
   .pokedex-filter-tw-list li .pill {
-      margin-right: 1.5625%
+    margin-right: 1.5625%;
   }
 
   .pokedex-filter-tw-list li:nth-child(even) .pill {
-      margin-left: 1.5625%
+    margin-left: 1.5625%;
   }
 
-  .pokedex-filter-tw-list li .type-filter,.pokedex-filter-tw-list li .weakness-filter {
-      margin: 0 .78125%
+  .pokedex-filter-tw-list li .type-filter,
+  .pokedex-filter-tw-list li .weakness-filter {
+    margin: 0 0.78125%;
   }
 
   .range-filter-wrapper {
-      margin-bottom: 2em
+    margin-bottom: 2em;
   }
 }
 
 .pokedex-results {
   position: relative;
-  height: auto
+  height: auto;
 }
 
 .pokedex-results .loader.bottom {
-  bottom: 0
+  bottom: 0;
 }
 
 html.touch .pokedex-results .loader.bottom {
-  bottom: 30px
+  bottom: 30px;
 }
 
 .pokedex-results .results {
   float: left;
   margin-right: -100%;
   width: 85.49%;
-  margin-left: 7.2525%
+  margin-left: 7.2525%;
 }
 
 .pokedex-results .results li {
   display: block;
   float: left;
   position: relative;
-  margin: 0 .78125% 50px;
-  width: 23.4375%
+  margin: 0 0.78125% 50px;
+  width: 23.4375%;
 }
 
 .pokedex-results .results li figure {
@@ -2248,32 +2504,32 @@ html.touch .pokedex-results .loader.bottom {
   float: left;
   width: 100%;
   position: absolute;
-  top: 0
+  top: 0;
 }
 
 .pokedex-results .results li .pokemon-info {
   clear: both;
   top: -5px;
-  padding-left: 7.2525%
+  padding-left: 7.2525%;
 }
 
 .pokedex-results .results li .pokemon-info .id {
-  font-family: "Flexo-Bold",arial,sans-serif;
+  font-family: "Flexo-Bold", arial, sans-serif;
   color: #303030;
   font-size: 80%;
-  padding-top: 2px
+  padding-top: 2px;
 }
 
 .pokedex-results .results li .pokemon-info h5 {
-  font-family: "Flexo-Demi",arial,sans-serif;
+  font-family: "Flexo-Demi", arial, sans-serif;
   color: #303030;
   text-transform: none;
   font-size: 145%;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .pokedex-results .results li .pokemon-info .abilities span {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   border-radius: 3px;
   border: thin #303030 solid;
   line-height: 18px;
@@ -2283,19 +2539,19 @@ html.touch .pokedex-results .loader.bottom {
   float: left;
   text-transform: none;
   font-size: 11px;
-  text-align: center
+  text-align: center;
 }
 
 .pokedex-results .no-results {
-  display: none
+  display: none;
 }
 
 .pokedex-promo .banner {
-  min-height: 96px
+  min-height: 96px;
 }
 
 .section.pokedex-tabs {
-  padding: 1em 0 0
+  padding: 1em 0 0;
 }
 
 #shuffle {
@@ -2303,180 +2559,187 @@ html.touch .pokedex-results .loader.bottom {
   margin-right: -100%;
   width: 34.71%;
   margin-top: 2em;
-  margin-left: .78125%
+  margin-left: 0.78125%;
 }
 
 #shuffle .icon_refresh {
-  font-size: 150%
+  font-size: 150%;
 }
 
-#shuffle+.styled-select {
+#shuffle + .styled-select {
   float: left;
   margin-right: -100%;
   width: 34.71%;
   border-radius: 5px;
   float: right;
-  margin-right: .78125%;
-  margin-top: 2em
+  margin-right: 0.78125%;
+  margin-top: 2em;
 }
 
-#shuffle+.styled-select:before {
+#shuffle + .styled-select:before {
   display: none;
   font-size: 125%;
   position: absolute;
   top: 0.675em;
-  left: 0.75em
+  left: 0.75em;
 }
 
-#shuffle+.styled-select i {
-  display: none
+#shuffle + .styled-select i {
+  display: none;
 }
 
-#shuffle+.custom-select-wrapper,html.touch #shuffle+.styled-select {
+#shuffle + .custom-select-wrapper,
+html.touch #shuffle + .styled-select {
   float: left;
   margin-right: -100%;
   width: 41.96%;
   float: right;
-  margin-right: .78125%;
-  margin-top: 2em
+  margin-right: 0.78125%;
+  margin-top: 2em;
 }
 
-#shuffle+.custom-select-wrapper i,html.touch #shuffle+.styled-select i {
-  display: block
+#shuffle + .custom-select-wrapper i,
+html.touch #shuffle + .styled-select i {
+  display: block;
 }
 
 @media (min-width: 721px) and (max-width: 1024px) {
   .pokedex-results .results li .pokemon-info h5 {
-      font-size:120%
+    font-size: 120%;
   }
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
   .pokedex-results .results li {
-      width:48.4375%
+    width: 48.4375%;
   }
 
   .pokedex-results .results li .pokemon-info {
-      padding-left: 3.62625%
+    padding-left: 3.62625%;
   }
 
   .pokedex-results .results li .pokemon-info h5 {
-      font-size: 115%
+    font-size: 115%;
   }
 
   #shuffle {
-      padding: 0.75em 0 0.675em
+    padding: 0.75em 0 0.675em;
   }
 
-  #shuffle,#shuffle+.custom-select-wrapper {
-      float: left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      clear: both;
-      margin-top: 1em
+  #shuffle,
+  #shuffle + .custom-select-wrapper {
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    clear: both;
+    margin-top: 1em;
   }
 }
 
 @media (min-width: 461px) and (max-width: 720px) {
   .pokedex-results .results li {
-      width:48.4375%
+    width: 48.4375%;
   }
 
   .pokedex-results .results li .pokemon-info {
-      padding-left: 3.62625%
+    padding-left: 3.62625%;
   }
 
   .pokedex-results .results li .pokemon-info h5 {
-      font-size: 115%
+    font-size: 115%;
   }
 
   #shuffle {
-      padding: 0.75em 0 0.675em
+    padding: 0.75em 0 0.675em;
   }
 
-  #shuffle,#shuffle+.custom-select-wrapper {
-      float: left;
-      margin-right: -100%;
-      width: 85.49%;
-      margin-left: 7.2525%;
-      clear: both;
-      margin-top: 1em
+  #shuffle,
+  #shuffle + .custom-select-wrapper {
+    float: left;
+    margin-right: -100%;
+    width: 85.49%;
+    margin-left: 7.2525%;
+    clear: both;
+    margin-top: 1em;
   }
 }
 
 @media screen and (max-width: 509px) {
   .pokedex-results .results li {
-      width:100%
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 510px) and (max-width: 767px) {
   .pokedex-results .results li {
-      width:48.4375%
+    width: 48.4375%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .pokedex-results .results li {
-      width:31.4375%
+    width: 31.4375%;
   }
 }
 
-.pokedex-profile,.pokedex-details-right {
+.pokedex-profile,
+.pokedex-details-right {
   display: block;
   float: left;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-profile {
   background-color: #fdfdec;
   border-radius: 5px;
   border: thin #303030 solid;
-  position: relative
+  position: relative;
 }
 
 .pokedex-profile .profile-images img {
   float: left;
   display: none;
   width: 100%;
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 
 .pokedex-profile .profile-images img.active {
-  display: block
+  display: block;
 }
 
 .pokedex-attributes {
-  display: none
+  display: none;
 }
 
 .pokedex-attributes.active {
-  display: block
+  display: block;
 }
 
 .pokedex-attributes h3 {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   clear: both;
   color: #222222;
   float: left;
   margin-top: 1.25em;
   text-transform: none;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-attributes ul {
-  *zoom:1;float: left;
-  width: 100%
+  *zoom: 1;
+  float: left;
+  width: 100%;
 }
 
-.pokedex-attributes ul:before,.pokedex-attributes ul:after {
+.pokedex-attributes ul:before,
+.pokedex-attributes ul:after {
   content: "";
-  display: table
+  display: table;
 }
 
 .pokedex-attributes ul:after {
-  clear: both
+  clear: both;
 }
 
 .pokedex-attributes li {
@@ -2486,68 +2749,70 @@ html.touch .pokedex-results .loader.bottom {
   border-radius: 5px;
   margin: 0.5em 0 0 0;
   padding: 0;
-  text-align: center
+  text-align: center;
 }
 
 .pokedex-attributes li a {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   color: white;
   display: block;
   float: left;
   line-height: 100%;
   padding: 0.5em 0;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-attributes li a span {
   display: inline-block;
-  position: relative
+  position: relative;
 }
 
 .pokedex-details-right .version-descriptions {
-  display: none
+  display: none;
 }
 
 .pokedex-details-right .version-descriptions.active {
-  display: block
+  display: block;
 }
 
 .pokedex-details-right .version-descriptions p {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   color: #222222;
   font-size: 112.5%;
   line-height: 150%;
-  display: none
+  display: none;
 }
 
 .pokedex-details-right .version-descriptions p.active {
-  display: block
+  display: block;
 }
 
-.pokedex-details-right>h3 {
-  font-family: "Flexo-Medium",arial,sans-serif;
+.pokedex-details-right > h3 {
+  font-family: "Flexo-Medium", arial, sans-serif;
   color: #222222;
   float: left;
   font-size: 112.5%;
   line-height: 150%;
   margin: 1.125em 0 2em;
-  text-transform: none
+  text-transform: none;
 }
 
 .pokedex-details-right .version-labels {
-  *zoom:1}
+  *zoom: 1;
+}
 
-.pokedex-details-right .version-labels:before,.pokedex-details-right .version-labels:after {
+.pokedex-details-right .version-labels:before,
+.pokedex-details-right .version-labels:after {
   content: "";
-  display: table
+  display: table;
 }
 
 .pokedex-details-right .version-labels:after {
-  clear: both
+  clear: both;
 }
 
 .pokedex-details-right .version-labels .version-label {
-  font-family: "Flexo-Bold",arial,sans-serif;
+  font-family: "Flexo-Bold", arial, sans-serif;
   border-color: #fff;
   border-style: solid;
   border-width: 4px;
@@ -2561,46 +2826,47 @@ html.touch .pokedex-results .loader.bottom {
   text-transform: none;
   text-align: center;
   vertical-align: middle;
-  width: 32px
+  width: 32px;
 }
 
 .pokedex-details-right .version-labels .version-label.version-x .icon_pokeball {
   color: #0072b0;
-  font-size: 30px
+  font-size: 30px;
 }
 
 .pokedex-details-right .version-labels .version-label.version-x.active {
-  border-color: #17adff
+  border-color: #17adff;
 }
 
 .pokedex-details-right .version-labels .version-label.version-y .icon_pokeball {
   color: #dd2d51;
-  font-size: 30px
+  font-size: 30px;
 }
 
 .pokedex-details-right .version-labels .version-label.version-y.active {
-  border-color: #eb859a
+  border-color: #eb859a;
 }
 
-.pokedex-details-right .pokemon-ability-info,.pokedex-details-right .pokemon-ability-info-detail {
+.pokedex-details-right .pokemon-ability-info,
+.pokedex-details-right .pokemon-ability-info-detail {
   border-radius: 10px;
   display: block;
   float: left;
   min-height: 100px;
   position: relative;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-details-right .pokemon-ability-info {
-  display: none
+  display: none;
 }
 
 .pokedex-details-right .pokemon-ability-info.active {
-  display: block
+  display: block;
 }
 
 .pokedex-details-right .pokemon-ability-info .attribute-title {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   clear: both;
   color: #fff;
   float: left;
@@ -2608,39 +2874,40 @@ html.touch .pokedex-results .loader.bottom {
   margin: 1.25em 0 0 1.25em;
   text-transform: none;
   white-space: normal;
-  word-break: break-word
+  word-break: break-word;
 }
 
 .pokedex-details-right .pokemon-ability-info .attribute-value {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   clear: both;
   color: #222222;
   float: left;
   font-size: 125%;
   margin: 0.75em 1.5em 0 1em;
   white-space: normal;
-  word-break: break-word
+  word-break: break-word;
 }
 
-.pokedex-details-right .pokemon-ability-info .attribute-value .icon_male_symbol,.pokedex-details-right .pokemon-ability-info .attribute-value .icon_female_symbol {
+.pokedex-details-right .pokemon-ability-info .attribute-value .icon_male_symbol,
+.pokedex-details-right .pokemon-ability-info .attribute-value .icon_female_symbol {
   float: left;
   font-size: 125%;
-  margin-bottom: 1em
+  margin-bottom: 1em;
 }
 
 .pokedex-details-right .pokemon-ability-info .attribute-value .icon_female_symbol {
-  margin-left: 0.5em
+  margin-left: 0.5em;
 }
 
 .pokedex-details-right .pokemon-ability-info .attribute-list {
   clear: both;
   float: left;
   position: relative;
-  width: 100%
+  width: 100%;
 }
 
 .pokedex-details-right .pokemon-ability-info .attribute-list .attribute-value:after {
-  font-family: "Flexo-Bold",arial,sans-serif;
+  font-family: "Flexo-Bold", arial, sans-serif;
   background: #fff;
   border-radius: 16px;
   color: #30a7d7;
@@ -2651,7 +2918,7 @@ html.touch .pokedex-results .loader.bottom {
   margin: 0.25em 0 0 0.75em;
   position: absolute;
   text-align: center;
-  width: 16px
+  width: 16px;
 }
 
 .pokedex-details-right .pokemon-ability-info-detail {
@@ -2660,11 +2927,11 @@ html.touch .pokedex-results .loader.bottom {
   opacity: 0;
   position: absolute;
   top: 0;
-  z-index: 3
+  z-index: 3;
 }
 
 .pokedex-details-right .pokemon-ability-info-detail span.button-close {
-  font-family: "Flexo-Bold",arial,sans-serif;
+  font-family: "Flexo-Bold", arial, sans-serif;
   background: #000 url("./images/dog-ears/dog-ear-bl-black.png") no-repeat left bottom;
   border-radius: 0 10px 0 0;
   cursor: pointer;
@@ -2673,22 +2940,22 @@ html.touch .pokedex-results .loader.bottom {
   position: absolute;
   right: 0;
   text-transform: none;
-  top: 0
+  top: 0;
 }
 
 .pokedex-details-right .pokemon-ability-info-detail span.button-close i {
   font-size: 100%;
-  margin-right: 0.25em
+  margin-right: 0.25em;
 }
 
 .pokedex-details-right .pokemon-ability-info-detail span.title {
-  font-family: "Flexo-Bold",arial,sans-serif;
+  font-family: "Flexo-Bold", arial, sans-serif;
   clear: both;
   color: #616161;
   float: left;
   font-size: 85%;
   margin: 1.25em 2em;
-  text-transform: none
+  text-transform: none;
 }
 
 .pokedex-details-right .pokemon-ability-info-detail h3 {
@@ -2696,16 +2963,16 @@ html.touch .pokedex-results .loader.bottom {
   color: #fff;
   float: left;
   font-size: 150%;
-  margin: 0.25em 1em
+  margin: 0.25em 1em;
 }
 
 .pokedex-details-right .pokemon-ability-info-detail p {
   clear: both;
-  color: #F2F2F2;
+  color: #f2f2f2;
   float: left;
   font-size: 100%;
   line-height: 125%;
-  margin: 0 1.5em 2.5em
+  margin: 0 1.5em 2.5em;
 }
 
 .pokedex-details-right .info .coming-soon {
@@ -2714,26 +2981,28 @@ html.touch .pokedex-results .loader.bottom {
   margin-bottom: 5em;
   clear: both;
   float: left;
-  font-size: 95%
+  font-size: 95%;
 }
 
 .pokedex-share h3 {
-  font-family: "Flexo-Medium",arial,sans-serif;
+  font-family: "Flexo-Medium", arial, sans-serif;
   color: #a4a4a4;
   font-size: 100%;
   line-height: 125%;
   margin-bottom: 0.5em;
-  text-transform: none
+  text-transform: none;
 }
 
 .pokedex-details-right .collectibles-detail-friends {
-  *zoom:1}
+  *zoom: 1;
+}
 
-.pokedex-details-right .collectibles-detail-friends:before,.pokedex-details-right .collectibles-detail-friends:after {
+.pokedex-details-right .collectibles-detail-friends:before,
+.pokedex-details-right .collectibles-detail-friends:after {
   content: "";
-  display: table
+  display: table;
 }
 
 .pokedex-details-right .collectibles-detail-friends:after {
-  clear: both
+  clear: both;
 }

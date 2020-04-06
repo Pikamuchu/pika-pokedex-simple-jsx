@@ -34,7 +34,7 @@ export const resultsRender = (results, labels) => (
   </section>
 );
 
-export const resultTileRender = (result) => (
+export const resultTileRender = result => (
   <li class="animating" style="opacity: 1; top: 0px; left: 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
     <figure>
       <a href="/pokedex/{result.id}">
@@ -44,17 +44,123 @@ export const resultTileRender = (result) => (
 
     <div class="pokemon-info">
       <p class="id">
-        <span class="number-prefix">N.º </span>{result.code}
+        <span class="number-prefix">N.º </span>
+        {result.code}
       </p>
       <h5>{result.name}</h5>
 
-      {result.type.map(type => (
+      {result.types.map(type => (
         <div class="abilities">
-          <span class="pill background-color-{type}">{type}</span>
+          <span class="pill background-color-{type && type.toLowerCase()}">{type}</span>
         </div>
       ))}
     </div>
   </li>
+);
+
+export const detailsRender = (details, labels) => (
+  <section class="section pokedex-details">
+    <div class="column-6 push-1">
+      <div class="pokedex-profile">
+        <div class="profile-images">
+          <img
+            class="active"
+            src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/{details.code}.png"
+            alt="{details.name}"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="column-6 push-7">
+      <div class="pokedex-details-right">
+        <div class="version-descriptions active">
+          <p class="version-x active">{details.description}</p>
+        </div>
+
+        <div class="info match-height-tablet">
+          <div class="pokemon-ability-info color-bg color-yellow match active" style="min-height: 260px;">
+            <div class="column-7">
+              <ul>
+                <li>
+                  <span class="attribute-title">Categoría</span>
+                  <span class="attribute-value">{details.category}</span>
+                </li>
+
+                <li>
+                  <span class="attribute-title">Altura</span>
+                  <span class="attribute-value">{details.height}</span>
+                </li>
+
+                <li>
+                  <span class="attribute-title">Peso</span>
+                  <span class="attribute-value">{details.weight}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="column-7 push-7">
+              <ul>
+                <li>
+                  <span class="attribute-title">Stats</span>
+                  <span class="attribute-value">HP: {details.stats.hp}</span>
+                  <span class="attribute-value">ATK: {details.stats.atk}</span>
+                  <span class="attribute-value">DEF: {details.stats.def}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pokedex-attributes active">
+            <div class="dtm-type">
+              <h3>Tipo</h3>
+              <ul>
+                {details.types.map(type => {
+                  const tid = type && type.toLowerCase();
+                  return (
+                    <li class="background-color-{tid}">
+                      <a href="/pokedex/?type={tid}">{type}</a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+
+            <div class="dtm-weaknesses">
+              <h3>Debilidad</h3>
+              <ul>
+                <li class="background-color-fire first">
+                  <a href="/es/pokedex/?weakness=fire">
+                    <span>Fuego</span>
+                  </a>
+                </li>
+
+                <li class="background-color-flying middle">
+                  <a href="/es/pokedex/?weakness=flying">
+                    <span>Volador</span>
+                  </a>
+                </li>
+
+                <li class="background-color-ice last">
+                  <a href="/es/pokedex/?weakness=ice">
+                    <span>Hielo</span>
+                  </a>
+                </li>
+
+                <li class="background-color-psychic first">
+                  <a href="/es/pokedex/?weakness=psychic">
+                    <span>Psíquico</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="collectibles-detail-friends" />
+      </div>
+    </div>
+  </section>
 );
 
 export const filtersRender = results => (
@@ -1732,146 +1838,3 @@ export const filtersRender = results => (
     </div>
   </section>
 );
-
-export const detailsRender = (details, labels) => (
-  <section class="section pokedex-details">
-    <div class="column-6 push-1">
-      <div class="pokedex-profile">
-        <div class="profile-images">
-          <img class="active" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/{details.code}.png" alt="{details.name}" />
-        </div>
-      </div>
-    </div>
-
-    <div class="column-6 push-7">
-      <div class="pokedex-details-right">
-        <div class="version-descriptions active">
-          <p class="version-x">
-            A Bulbasaur es fácil verle echándose una siesta al sol. La semilla que tiene en el lomo va creciendo cada
-            vez más a medida que absorbe los rayos del sol.
-          </p>
-
-          <p class="version-y active">
-            A Bulbasaur es fácil verle echándose una siesta al sol. La semilla que tiene en el lomo va creciendo cada
-            vez más a medida que absorbe los rayos del sol.
-          </p>
-        </div>
-
-        <h3>Versiones:</h3>
-        <div class="version-labels">
-          <span class="version-label version-y active ">
-            <i class="icon icon_pokeball" />
-          </span>
-          <span class="version-label version-x ">
-            <i class="icon icon_pokeball" />
-          </span>
-        </div>
-
-        <div class="info match-height-tablet">
-          <div class="pokemon-ability-info color-bg color-lightblue match active" style="min-height: 225px;">
-            <div class="column-7">
-              <ul>
-                <li>
-                  <span class="attribute-title">Altura</span>
-                  <span class="attribute-value">{details.height}</span>
-                </li>
-
-                <li>
-                  <span class="attribute-title">Peso</span>
-                  <span class="attribute-value">{details.weight}</span>
-                </li>
-
-                <li>
-                  <span class="attribute-title">Sexo</span>
-
-                  <span class="attribute-value">
-                    <i class="icon icon_male_symbol" />
-                    <i class="icon icon_female_symbol" />
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="column-7 push-7">
-              <ul>
-                <li>
-                  <span class="attribute-title">Categoría</span>
-                  <span class="attribute-value">Semilla</span>
-                </li>
-
-                <li>
-                  <span class="attribute-title">Habilidad</span>
-
-                  <ul class="attribute-list">
-                    <li>
-                      <a href="" class="moreInfo">
-                        <span class="attribute-value">Espesura</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="pokemon-ability-info-detail match" style="min-height: 225px;">
-              <span class="button-close">
-                <i class="icon icon_multiply" />
-                Cerrar
-              </span>
-              <span class="title">Información sobre habilidad</span>
-              <h3>Espesura</h3>
-              <p>Potencia los ataques de tipo Planta en un apuro.</p>
-            </div>
-          </div>
-
-          <div class="pokedex-attributes active">
-            <div class="dtm-type">
-              <h3>Tipo</h3>
-              <ul>
-                <li class="background-color-grass">
-                  <a href="/es/pokedex/?type=grass">Planta</a>
-                </li>
-
-                <li class="background-color-poison middle">
-                  <a href="/es/pokedex/?type=poison">Veneno</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="dtm-weaknesses">
-              <h3>Debilidad</h3>
-              <ul>
-                <li class="background-color-fire first">
-                  <a href="/es/pokedex/?weakness=fire">
-                    <span>Fuego</span>
-                  </a>
-                </li>
-
-                <li class="background-color-flying middle">
-                  <a href="/es/pokedex/?weakness=flying">
-                    <span>Volador</span>
-                  </a>
-                </li>
-
-                <li class="background-color-ice last">
-                  <a href="/es/pokedex/?weakness=ice">
-                    <span>Hielo</span>
-                  </a>
-                </li>
-
-                <li class="background-color-psychic first">
-                  <a href="/es/pokedex/?weakness=psychic">
-                    <span>Psíquico</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="collectibles-detail-friends" />
-      </div>
-    </div>
-  </section>
-);
-
