@@ -1,12 +1,12 @@
 const { mainLayout } = require('./mainLayout');
 
-export const notFoundPage = labels =>
+export const errorPage = (error, labels) =>
   mainLayout(
     <div class="container">
       <section class="mosaic section">
         <div class="column-6 push-2 full-height">
-          <h1 class="page-main-title">Page not Found.</h1>
-          <h2 class="subtitle-404">Lo sentimos, pero la página que buscas no está aquí.</h2>
+          <h1 class="page-main-title">{error.message || 'Ooops'}</h1>
+          <h2 class="subtitle-404">{error.description || ''}</h2>
 
           <div class="listview">
             <ul>

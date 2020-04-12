@@ -49,9 +49,9 @@ export const resultTileRender = result => (
       </p>
       <h5>{result.name}</h5>
 
-      {result.types.map(type => (
+      {result.types && result.types.map(type => (
         <div class="abilities">
-          <span class="pill background-color-{type && type.toLowerCase()}">{type}</span>
+          <span class="pill background-color-{type.id}">{type.name}</span>
         </div>
       ))}
     </div>
@@ -99,30 +99,18 @@ export const detailsRender = (details, labels) => (
               </ul>
             </div>
 
-            <div class="column-7 push-7">
-              <ul>
-                <li>
-                  <span class="attribute-title">Stats</span>
-                  <span class="attribute-value">HP: {details.stats.hp}</span>
-                  <span class="attribute-value">ATK: {details.stats.atk}</span>
-                  <span class="attribute-value">DEF: {details.stats.def}</span>
-                </li>
-              </ul>
-            </div>
+            <div class="column-7 push-7">{statsRender(details.stats)}</div>
           </div>
 
           <div class="pokedex-attributes active">
             <div class="dtm-type">
               <h3>Tipo</h3>
               <ul>
-                {details.types.map(type => {
-                  const tid = type && type.toLowerCase();
-                  return (
-                    <li class="background-color-{tid}">
-                      <a href="/pokedex/?type={tid}">{type}</a>
-                    </li>
-                  );
-                })}
+                {details.types.map(type => (
+                  <li class="background-color-{type.id}">
+                    <a href="/pokedex/?type={type.id}">{type.name}</a>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -161,6 +149,19 @@ export const detailsRender = (details, labels) => (
       </div>
     </div>
   </section>
+);
+
+const statsRender = stats => (
+  <ul>
+    <li>
+      <span class="attribute-title">Stats</span>
+      {stats.map(stat => (
+        <span class="attribute-value">
+          {stat.name}: {stat.value}
+        </span>
+      ))}
+    </li>
+  </ul>
 );
 
 export const filtersRender = results => (
