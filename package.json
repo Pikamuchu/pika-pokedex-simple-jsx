@@ -10,7 +10,8 @@
     "build": "npm run build:client && npm run build:server",
     "watch": "webpack --watch --mode development",
     "start": "nodemon --exec babel-node src/server/index.js",
-    "test": "nyc mocha --require @babel/register"
+    "test": "nyc mocha --require @babel/register",
+    "babel": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,8 @@
   "homepage": "https://github.com/pikamachu/pika-searchquire-examples#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "oakdex-pokedex": "^0.4.5",
+    "express-async-handler": "^1.1.4",
+    "pokedex-promise-v2": "^3.2.0",
     "simple-jsx": "^1.0.0"
   },
   "devDependencies": {
