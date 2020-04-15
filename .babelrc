@@ -1,5 +1,5 @@
 {
   "presets": ["@babel/preset-env"],
-  "plugins": ["babel-plugin-transform-simple-jsx"],
+  "plugins": ["@babel/transform-runtime", "babel-plugin-transform-simple-jsx"],
   "ignore": ["node_modules"]
 }
