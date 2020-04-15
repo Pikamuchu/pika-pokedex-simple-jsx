@@ -1,4 +1,4 @@
-const { mainLayout } = require('./mainLayout');
+const { mainLayout } = require('../mainLayout');
 
 export const errorPage = (error, labels) =>
   mainLayout(

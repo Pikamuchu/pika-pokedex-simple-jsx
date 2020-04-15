@@ -1,3 +1,2 @@
-import mainPage from '../common/pages/mainPage';
-
-document.getElementById('app').innerHTML = mainPage("Welcome to simple-jsx example page");
+import './styles/main.scss';
+import './components'

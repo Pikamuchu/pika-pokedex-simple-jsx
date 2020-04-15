@@ -1,5 +1,5 @@
-const { mainLayout } = require('./mainLayout');
-const { headerRender, filtersRender, resultsRender, detailsRender } = require('../renders/pokedexRenders');
+const { mainLayout } = require('../mainLayout');
+const { headerRender, filtersRender, resultsRender, detailsRender } = require('../../../common/renders/pokedexRenders');
 
 export const mainPage = (results, labels) =>
   mainLayout(
@@ -69,21 +69,5 @@ export const mainPage = (results, labels) =>
       {resultsRender()}
 
       {detailsRender()}
-    </div>
-  );
-
-export const listPage = (results, labels) =>
-  mainLayout(
-    <div class="container pokedex">
-      {headerRender('Pokedex')}
-      {resultsRender(results, labels)}
-    </div>
-  );
-
-export const detailsPage = (details, labels) =>
-  mainLayout(
-    <div class="container pokedex">
-      {headerRender(`Pokedex - ${details.name}`)}
-      {detailsRender(details, labels)}
     </div>
   );

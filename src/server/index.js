@@ -8,7 +8,6 @@ const PUBLIC_FOLDER = './public';
 const server = express()
   .disable('x-powered-by')
   .use(express.static(PUBLIC_FOLDER))
-  .use(contentHandler)
   .use(routes)
   .use(errorHandler)
   .listen(SERVER_PORT, function(err) {

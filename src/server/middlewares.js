@@ -1,4 +1,4 @@
-import { errorPage } from '../common/views/pages/errorPages';
+import { errorPage } from './views/pages/errorPages';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
