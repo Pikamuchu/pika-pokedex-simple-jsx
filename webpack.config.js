@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env = {}, argv) => {
   const isDevelopment = argv.mode === 'development';
@@ -29,13 +31,14 @@ module.exports = (env = {}, argv) => {
       ]
     },
     output: {
-      path: __dirname + '/dist',
+      path: __dirname + '/dist/client',
       publicPath: '/'
     },
     plugins: [
       new MiniCssExtractPlugin({
         filename: 'main.css'
-      })
+      }),
+      new CleanWebpackPlugin()
     ]
   };
 
@@ -50,6 +53,8 @@ module.exports = (env = {}, argv) => {
   } else {
     config.plugins.push(new uglifyJsPlugin());
   }
+
+  config.plugins.push(new CopyPlugin([{ from: __dirname + '/src/client/favicon.ico', to: config.output.path }]));
 
   return config;
 };
