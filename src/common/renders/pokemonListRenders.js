@@ -24,7 +24,7 @@ export const pokemonListItemsRender = (items, labels) => (
     </div>
 
     <div class="content-block content-block-full">
-      <button id="loadMore" style="display: inline-block;">
+      <button class="button-load-more">
         <span class="button-lightblue">Cargar más Pokémon</span>
       </button>
     </div>

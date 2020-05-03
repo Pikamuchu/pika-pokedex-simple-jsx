@@ -1,6 +1,6 @@
-import FetchRenderElement from './fetchRenderElement';
-import RenderElement from './renderElement';
-import { pokemonListRender, pokemonListItemRender } from '../../common/renders/pokemonListRenders';
+import FetchRenderElement from '../base/fetchRenderElement';
+import RenderElement from '../base/renderElement';
+import { pokemonListRender, pokemonListItemRender } from '../../../common/renders/pokemonListRenders';
 
 customElements.define(
   'pokemon-list',
