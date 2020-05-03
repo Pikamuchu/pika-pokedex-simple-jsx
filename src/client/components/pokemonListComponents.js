@@ -1,21 +1,63 @@
-import ListElement from './listElement';
-import { pokemonListRender } from '../../common/renders/pokemonRenders';
+import FetchRenderElement from './fetchRenderElement';
+import RenderElement from './renderElement';
+import { pokemonListRender, pokemonListItemRender } from '../../common/renders/pokemonListRenders';
 
 customElements.define(
   'pokemon-list',
-  class PokemonList extends ListElement {
+  class PokemonList extends RenderElement {
     constructor() {
       super();
     }
     render() {
-      return this.items && pokemonListRender(this.items);
+      return this.data && pokemonListRender(this.data);
     }
     events() {
-      console.log('events');
-      const loadMoreButton = this.querySelector('#loadMore');
-      loadMoreButton.addEventListener('click', event => {
-        this.fetchList({limit: 40});
+      this.on('#loadMore', 'click', event => {
+        this.fetchData({ limit: 40 });
       });
     }
+  }
+);
+
+customElements.define(
+  'pokemon-list-filters',
+  class PokemonListItem extends RenderElement {
+    constructor() {
+      super();
+    }
+    render() {
+      return this.filters && pokemonListFiltersRender(this.filters);
+    }
+    events() {}
+  }
+);
+
+customElements.define(
+  'pokemon-list-items',
+  class PokemonListItems extends FetchRenderElement {
+    constructor() {
+      super();
+    }
+    render() {
+      return this.items && pokemonListRender(this.data);
+    }
+    events() {
+      this.on('#loadMore', 'click', event => {
+        this.fetchData({ limit: 40 });
+      });
+    }
+  }
+);
+
+customElements.define(
+  'pokemon-tile',
+  class PokemonTile extends RenderElement {
+    constructor() {
+      super();
+    }
+    render() {
+      return this.item && pokemonTileRender(this.item);
+    }
+    events() {}
   }
 );
