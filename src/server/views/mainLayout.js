@@ -8,8 +8,10 @@ export const mainLayout = (body, locale) =>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" media="all" href="/main.css" />
-        <script src="/main.js"></script>
       </head>
-      <body>{body}</body>
+      <body>
+        {body}
+        <script src="/main.js"></script>
+      </body>
     </html>
   );

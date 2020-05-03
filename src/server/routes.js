@@ -10,7 +10,8 @@ routes.get('/', paramsHandler, (req, res) => {
 });
 routes.get('/pokemons', paramsHandler, contentHandler, asyncHandler(pokemonsController.getListPage));
 routes.get('/pokemons/:id', paramsHandler, contentHandler, asyncHandler(pokemonsController.getDetailsPage));
-routes.get('/api/pokemons', paramsHandler, asyncHandler(pokemonsController.getListJson));
+routes.get('/api/pokemons', paramsHandler, asyncHandler(pokemonsController.getListItemsJson));
 routes.get('/api/pokemons/:id', paramsHandler, asyncHandler(pokemonsController.getDetailsJson));
+routes.get('/api/filters/pokemon', paramsHandler, asyncHandler(pokemonsController.getListFiltersJson));
 
 export default routes;

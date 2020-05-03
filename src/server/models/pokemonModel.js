@@ -1,21 +1,26 @@
-var Pokedex = require('pokedex-promise-v2');
-var options = {
+const Pokedex = require('pokedex-promise-v2');
+const P = new Pokedex({
   protocol: 'https',
   hostName: 'pokeapi.co',
   versionPath: '/api/v2/',
   cacheLimit: 100 * 1000, // 100s
   timeout: 5 * 1000 // 5s
-};
-var P = new Pokedex(options);
+});
 
-export const getList = async params => {
-  const itemList = await P.getPokemonsList({ limit: 20, offset: 0 });
+const DEFAULT_LIMIT = 20;
+
+export const getListItems = async params => {
+  const itemList = await P.getPokemonsList({ limit: params.limit || DEFAULT_LIMIT, offset: params.offset || 0 });
   const pokemonList = await Promise.all(
     itemList.results.map(async item => {
       return await getItem(item.name, params.lang);
     })
   );
   return pokemonList.filter(pokemon => !pokemon.evolvesFromId);
+};
+
+export const getListFilters = async params => {
+  return {};
 };
 
 export const getItem = async (id, lang) => {
