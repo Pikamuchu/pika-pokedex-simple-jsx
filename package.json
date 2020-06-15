@@ -10,7 +10,7 @@
     "build": "npm run build:client && npm run build:server",
     "watch": "webpack --watch --mode development",
     "start": "nodemon --exec babel-node src/server/index.js",
-    "test": "nyc mocha --require @babel/register",
+    "test": "nyc mocha --timeout 20000 --require @babel/register",
     "babel": "babel src --out-dir dist"
   },
   "repository": {
